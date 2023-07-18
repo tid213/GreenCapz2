@@ -5,8 +5,8 @@ const app = express();
 require("dotenv").config();
 const cookieParser = require("cookie-parser");
 const authRoute = require("./Routes/AuthRoute");
-const { MONGO_URL } = process.env;
-const PORT = 4000;
+const { MONGO_URL, PORT } = process.env;
+
 
 mongoose
   .connect(MONGO_URL, {
