@@ -4,7 +4,7 @@ import { useCookies } from "react-cookie";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
-const Home = () => {
+const AddReading = () =>{
   const navigate = useNavigate();
   const [cookies, removeCookie] = useCookies([]);
   const [username, setUsername] = useState("");
@@ -32,22 +32,15 @@ const Home = () => {
     removeCookie("token");
     navigate("/signup");
   };
-  const AddReadingRedirect = () => {
-    navigate("/addreading");
-  };
-  return (
-    <>
-      <div className="home_page">
-        <h4>
-          {" "}
-          Welcome <span>{username}</span>
-        </h4>
-        <button onClick={Logout}>LOGOUT</button>
-        <button onClick={AddReadingRedirect}>Add Reading</button>
-      </div>
-      <ToastContainer />
-    </>
-  );
-};
+    return(
+        <>
+        <div className="add-reading">
+            <h1>Add Reading</h1>
+        </div>
+        <ToastContainer />
+        </>
+    )
 
-export default Home;
+}
+
+export default AddReading;
