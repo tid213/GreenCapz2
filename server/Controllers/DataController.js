@@ -6,7 +6,7 @@ module.exports.AddReading = async (req, res, next) => {
         const reading = await Data.create({sensorUser, sensorName, sensorType, sensorReading, createdAt});
         res
           .status(201)
-          .json({ message: "Reading added successfully"});
+          .json({ message: "Reading added successfully", success: true});
           next();
     } catch(error) {
         console.error(error);

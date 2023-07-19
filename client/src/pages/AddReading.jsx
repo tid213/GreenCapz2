@@ -30,9 +30,7 @@ const AddReading = () =>{
       readingData.sensorUser = user;
       console.log(cookies);
       return status
-        ? toast(`Hello ${user}`, {
-            position: "top-right",
-          })
+        ? console.log("User Authenticated")
         : (removeCookie("token"), navigate("/login"));
     };
     verifyCookie();

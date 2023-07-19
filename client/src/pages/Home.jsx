@@ -21,9 +21,7 @@ const Home = () => {
       const { status, user } = data;
       setUsername(user);
       return status
-        ? toast(`Hello ${user}`, {
-            position: "top-right",
-          })
+        ? console.log("User Authenticated")
         : (removeCookie("token"), navigate("/login"));
     };
     verifyCookie();
