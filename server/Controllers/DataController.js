@@ -1,4 +1,5 @@
 const Data = require("../Models/DataModel");
+const User = require("../Models/UserModel");
 
 module.exports.AddReading = async (req, res, next) => {
     try {
@@ -11,4 +12,16 @@ module.exports.AddReading = async (req, res, next) => {
     } catch(error) {
         console.error(error);
     }
+}
+
+module.exports.Readings = async (req, res, next) => {
+    try{
+        const {sensorUser} = req.body;
+        const userReadings = await Data.find({ sensorUser})
+        if(userReadings){
+            res.json(userReadings);
+        }
+    } catch (error) {
+    console.error(error);
+  }
 }
