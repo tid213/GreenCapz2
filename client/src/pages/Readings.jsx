@@ -6,16 +6,17 @@ import axios from "axios";
 const Readings = (username) => {
 
     const [userReadings, setUserReadings] = useState({});
+    const sensorUser = username.username;
 
     useEffect(()=>{
         const getUserData = async () => {
             const { data } = await axios.post(
                 "http://localhost:4000/readings",
-                {username},
+                {sensorUser},
                 { withCredentials: true }
               );
-              const cleanedData = JSON.stringify(data);
-              setUserReadings(cleanedData);
+              const {status, message} = data;
+              setUserReadings(message);
               console.log(userReadings);
         }
 
