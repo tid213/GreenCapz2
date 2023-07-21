@@ -17,15 +17,28 @@ const Readings = (username) => {
               );
               const {status, message} = data;
               setUserReadings(message);
-              console.log(userReadings);
         }
 
         getUserData();
-    }, [username])
+    }, [username]);
+
+    const showReadings = () => {
+        let list = [];
+        for(let i=0; i<userReadings.length; i++){
+            let key = i + 1;
+            list.push(<li key={key}>{userReadings[i].sensorName}{userReadings[i].sensorReading}</li>)
+        }
+        return list;
+    }
+
+
 
     return(
         <div className="readingsContainer">
             <h1>Show Readings</h1>
+            <ul>
+                {showReadings()}
+            </ul>
         </div>
     )
 
