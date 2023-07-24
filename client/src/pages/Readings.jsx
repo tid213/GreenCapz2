@@ -6,9 +6,9 @@ import axios from "axios";
 const Readings = (username) => {
 
     const [userReadings, setUserReadings] = useState({});
-    const sensorUser = username.username;
 
     useEffect(()=>{
+        const sensorUser = username.username;
         const getUserData = async () => {
             const { data } = await axios.post(
                 "http://localhost:4000/readings",
