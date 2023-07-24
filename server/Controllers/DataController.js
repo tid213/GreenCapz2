@@ -17,8 +17,7 @@ module.exports.AddReading = async (req, res, next) => {
 module.exports.Readings = async (req, res, next) => {
     try{
         const {sensorUser} = req.body;
-        console.log(sensorUser)
-        const userReadings = await Data.find({ sensorUser})
+        const userReadings = await Data.find({ sensorUser })
         if(userReadings){
             res
             .status(201)

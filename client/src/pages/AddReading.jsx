@@ -28,7 +28,6 @@ const AddReading = () =>{
       const { status, user } = data;
       setUsername(user);
       readingData.sensorUser = user;
-      console.log(cookies);
       return status
         ? console.log("User Authenticated")
         : (removeCookie("token"), navigate("/login"));
