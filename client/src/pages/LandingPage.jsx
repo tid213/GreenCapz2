@@ -30,13 +30,16 @@ const LandingPage = () => {
             <div className="landing-name">
             <p>Green Capz</p>
             </div> 
+            <div className="landing-text">
+            <p>Login or Sign up to start logging today..</p>
+            </div>
             <div className="landing-buttons">
             <div onClick={loginButton} className="button-div">
                 <div className="button-img">
                 <img src={login}></img>
                 </div>
                 <div className="button-text">
-                <p>Sign in</p>
+                <p>Login</p>
                 </div>
             </div>
             <div onClick={signupButton} className="button-div">

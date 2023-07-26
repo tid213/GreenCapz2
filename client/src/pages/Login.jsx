@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
+import homeImg from '../images/home.svg';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -57,9 +58,15 @@ const Login = () => {
     });
   };
 
+  const homeButton = (e) => {
+    e.preventDefault();
+    navigate('/')
+  }
+
   return (
+    <>
     <div className="form_container">
-      <h2>Login Account</h2>
+      <h2>Account Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label>
@@ -83,11 +90,21 @@ const Login = () => {
         </div>
         <button type="submit">Submit</button>
         <span>
-          Already have an account? <Link to={"/signup"}>Signup</Link>
+          Don't have an account? <Link to={"/signup"}>Signup</Link>
         </span>
       </form>
-      <ToastContainer />
     </div>
+    <div className="home-button">
+      <div onClick={homeButton} className="button-div">
+        <div className="button-img">
+          <img src={homeImg}></img>
+        </div>
+        <div className="button-text">
+          <p>Home</p>
+        </div>
+      </div>
+    </div>
+    </>
   );
 };
 
