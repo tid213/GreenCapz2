@@ -11,6 +11,7 @@ const Signup = () => {
     password: "",
     username: "",
   });
+  const [errorMessage, setErrorMessage] = useState("");
   const { email, password, username } = inputValue;
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -46,7 +47,7 @@ const Signup = () => {
           navigate("/");
         }, 1000);
       } else {
-        handleError(message);
+        setErrorMessage(message);
       }
     } catch (error) {
       console.log(error);
@@ -68,6 +69,9 @@ const Signup = () => {
     <>
     <div className="form_container">
       <h2>Account Signup</h2>
+      <div className="signup-error">
+        <p>{errorMessage}</p>
+      </div>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label>

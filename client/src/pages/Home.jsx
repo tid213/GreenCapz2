@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     const verifyCookie = async () => {
       if (!cookies.token) {
-        navigate("/login");
+        navigate("/");
       }
       const { data } = await axios.post(
         "http://localhost:4000",
@@ -31,7 +31,7 @@ const Home = () => {
   }, [cookies, navigate, removeCookie]);
   const Logout = () => {
     removeCookie("token");
-    navigate("/login");
+    setLoggedIn(false);
   };
   const AddReadingRedirect = () => {
     navigate("/addreading");
