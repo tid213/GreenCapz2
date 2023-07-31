@@ -95,23 +95,22 @@ const AddReading = () =>{
           <form onSubmit={handleSubmit}>
            <div>
             <label htmlFor="sensorName">Sensor Name:</label>
-            <input
-            type="text"
-            name="sensorName"
-            value={sensorName}
-            placeholder="Enter sensor name"
-            onChange={handleOnChange}
-            />
+            <select name="sensorName" defaultValue={sensorName} onChange={handleOnChange} >
+              <option value="Tent Temp">Tent Temp</option>
+              <option value="Tent Humidity">Tent Humidity</option>
+              <option value="Water Temp">Water Temp</option>
+              <option value="Water pH">Water pH</option>
+              <option value="Water PPM">Water PPM</option>
+            </select>
            </div>
            <div>
             <label htmlFor="sensorType">Sensor Type:</label>
-            <input
-            type="text"
-            name="sensorType"
-            value={sensorType}
-            placeholder="Enter type of sensor"
-            onChange={handleOnChange}
-            />
+            <select name="sensorType" onChange={handleOnChange}>
+              <option value="Temperature">Temperature F</option>
+              <option value="Humidity">Humidity</option>
+              <option value="pH">pH</option>
+              <option value="PPM">PPM</option>
+            </select>
            </div>
            <div>
             <label htmlFor="sensorReading">Sensor Reading:</label>
