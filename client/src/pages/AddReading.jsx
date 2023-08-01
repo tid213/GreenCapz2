@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
+import Select from 'react-select';
 
 const AddReading = () =>{
   const navigate = useNavigate();
@@ -87,15 +88,19 @@ const AddReading = () =>{
         sensorReading: "",
       });
   };
+
+  const setDefault = () => {
+    return("Select...")
+  }
     return(
         <div className="form_container">
           <div>
             <h1>Add Reading</h1>
           </div>
           <form onSubmit={handleSubmit}>
-           <div>
+           <div className="select-box">
             <label htmlFor="sensorName">Sensor Name:</label>
-            <select name="sensorName" defaultValue={sensorName} onChange={handleOnChange} >
+            <select name="sensorName" value="Select" onChange={handleOnChange}>
               <option value="Tent Temp">Tent Temp</option>
               <option value="Tent Humidity">Tent Humidity</option>
               <option value="Water Temp">Water Temp</option>
@@ -105,7 +110,7 @@ const AddReading = () =>{
            </div>
            <div>
             <label htmlFor="sensorType">Sensor Type:</label>
-            <select name="sensorType" onChange={handleOnChange}>
+            <select name="sensorType" value="Temperature" onChange={handleOnChange}>
               <option value="Temperature">Temperature F</option>
               <option value="Humidity">Humidity</option>
               <option value="pH">pH</option>
