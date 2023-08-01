@@ -15,7 +15,7 @@ const Readings = (username) => {
                 {sensorUser},
                 { withCredentials: true }
               );
-              const {status, message} = data;
+              const {status, message, tentTemp} = data;
               setUserReadings(message);
         }
 
@@ -26,7 +26,7 @@ const Readings = (username) => {
         let list = [];
         for(let i=0; i<userReadings.length; i++){
             let key = i + 1;
-            list.push(<li key={key}>{userReadings[i].sensorName}{userReadings[i].sensorReading}</li>)
+            list.push(<li key={key}>{userReadings[i].sensorName}{userReadings[i].sensorReading}{userReadings[i].sensorType}</li>)
         }
         return list;
     }

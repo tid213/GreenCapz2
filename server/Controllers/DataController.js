@@ -16,12 +16,22 @@ module.exports.AddReading = async (req, res, next) => {
 
 module.exports.Readings = async (req, res, next) => {
     try{
+        const tentTemp = [];
+        const tentHum = [];
+        const waterTemp = [];
+        const waterPh = [];
+        const waterPpm = [];
         const {sensorUser} = req.body;
         const userReadings = await Data.find({ sensorUser })
         if(userReadings){
+            for (let i=0; i<userReadings.length; i++){
+                if (userReadings[i].sensorName === "tent-temp"){
+                    tentTemp.push(userReadings[i]); 
+                }
+            }
             res
             .status(201)
-            .json({message: userReadings});
+            .json({message: userReadings, tentTemp: tentTemp});
             next();
         }
     } catch (error) {

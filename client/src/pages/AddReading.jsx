@@ -11,8 +11,8 @@ const AddReading = () =>{
   const [username, setUsername] = useState("");
   const [readingData, setReadingData] = useState({
     sensorUser: "",
-    sensorName: "",
-    sensorType: "",
+    sensorName: "tent-temp",
+    sensorType: "temperature",
     sensorReading: "",
     });
   const {sensorUser, sensorName, sensorType, sensorReading} = readingData;
@@ -83,15 +83,11 @@ const AddReading = () =>{
     }
     setReadingData({
         ...readingData,
-        sensorName: "",
-        sensorType: "",
+        sensorName: "Tent Temp",
+        sensorType: "Temperature",
         sensorReading: "",
       });
   };
-
-  const setDefault = () => {
-    return("Select...")
-  }
     return(
         <div className="form_container">
           <div>
@@ -100,21 +96,21 @@ const AddReading = () =>{
           <form onSubmit={handleSubmit}>
            <div className="select-box">
             <label htmlFor="sensorName">Sensor Name:</label>
-            <select name="sensorName" value="Select" onChange={handleOnChange}>
-              <option value="Tent Temp">Tent Temp</option>
-              <option value="Tent Humidity">Tent Humidity</option>
-              <option value="Water Temp">Water Temp</option>
-              <option value="Water pH">Water pH</option>
-              <option value="Water PPM">Water PPM</option>
+            <select name="sensorName"  onChange={handleOnChange}>
+              <option value="tent-temp">Tent Temp</option>
+              <option value="tent-hum">Tent Humidity</option>
+              <option value="water-temp">Water Temp</option>
+              <option value="warer-ph">Water pH</option>
+              <option value="water-ppm">Water PPM</option>
             </select>
            </div>
            <div>
             <label htmlFor="sensorType">Sensor Type:</label>
-            <select name="sensorType" value="Temperature" onChange={handleOnChange}>
-              <option value="Temperature">Temperature F</option>
-              <option value="Humidity">Humidity</option>
-              <option value="pH">pH</option>
-              <option value="PPM">PPM</option>
+            <select name="sensorType" onChange={handleOnChange}>
+              <option value="temperature">Temperature F</option>
+              <option value="humidity">Humidity</option>
+              <option value="ph">pH</option>
+              <option value="ppm">PPM</option>
             </select>
            </div>
            <div>
