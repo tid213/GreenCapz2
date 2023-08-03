@@ -27,11 +27,18 @@ const Readings = (username) => {
               const {status, message, tentTemp} = data;
               setUserReadings(message);
               setTentTemps(tentTemp);
-              console.log(tentTemp)
         }
 
         getUserData();
     }, [username]);
+
+
+    const getNoteTime = (utcDate) => {
+        let event = new Date(utcDate);
+        let time = event.toJSON();
+        let formatedTime = new Date(time).toLocaleString();
+        return formatedTime;
+    }
 
     const showReadings = () => {
         let list = [];
@@ -54,9 +61,9 @@ const Readings = (username) => {
         if (active && payload && payload.length) {
           return (
             <div className="custom-tooltip">
+              <p className="intro">{getNoteTime(label)}</p>
               <p className="label">{`${payload[0].value}`}</p>
-              <p className="intro">{label}</p>
-              <p className="desc">Anything you want can be displayed here.</p>
+              <p className="desc"></p>
             </div>
           );
         }
@@ -81,10 +88,10 @@ const Readings = (username) => {
                     bottom: 0
                 }}
             >
-                <XAxis dataKey="createdAt" />
+                <XAxis dataKey="createdAt" hide="true"/>
                 <YAxis />
                 <Tooltip content={<CustomTooltip />} />
-                <Area type="monotone" dataKey="sensorReading" stroke="#8884d8" fill="#8884d8" />
+                <Area type="monotone" dataKey="sensorReading" stroke="#00e304" fill="#00e304" />
             </AreaChart>
             </div>
             <ul>
