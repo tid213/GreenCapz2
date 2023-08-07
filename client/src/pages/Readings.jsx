@@ -78,7 +78,7 @@ const Readings = (username) => {
             <h1>Show Readings</h1>
             <div>
             <AreaChart
-                width={400}
+                width={300}
                 height={200}
                 data={tentTemps}
                  margin={{
@@ -89,7 +89,7 @@ const Readings = (username) => {
                 }}
             >
                 <XAxis dataKey="createdAt" hide="true"/>
-                <YAxis />
+                <YAxis hide="true" />
                 <Tooltip content={<CustomTooltip />} />
                 <Area type="monotone" dataKey="sensorReading" stroke="#00e304" fill="#00e304" />
             </AreaChart>
