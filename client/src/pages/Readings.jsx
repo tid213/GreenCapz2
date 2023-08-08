@@ -8,7 +8,8 @@ import {
     XAxis,
     YAxis,
     CartesianGrid,
-    Tooltip
+    Tooltip,
+    ResponsiveContainer
   } from "recharts";
 
 const Readings = (username) => {
@@ -60,10 +61,10 @@ const Readings = (username) => {
     const CustomTooltip = ({ active, payload, label }) => {
         if (active && payload && payload.length) {
           return (
-            <div className="custom-tooltip">
+            <div className="custom-tooltip tooltip-div">
+              <p className="label">{`${payload[0].value}`}f</p>
+              <p className="desc">Reading taken:</p>
               <p className="intro">{getNoteTime(label)}</p>
-              <p className="label">{`${payload[0].value}`}</p>
-              <p className="desc"></p>
             </div>
           );
         }
@@ -75,28 +76,27 @@ const Readings = (username) => {
 
     return(
         <div className="readingsContainer">
-            <h1>Show Readings</h1>
-            <div>
-            <AreaChart
+            <h1>Tent Temperatures</h1>
+            <div className="tent-temp-chart">
+            <ResponsiveContainer width="100%" height="100%">
+              <AreaChart
                 width={300}
                 height={200}
                 data={tentTemps}
                  margin={{
-                    top: 10,
-                    right: 30,
+                    top: 5,
+                    right: 0,
                     left: 0,
-                    bottom: 0
+                    bottom: 5
                 }}
             >
                 <XAxis dataKey="createdAt" hide="true"/>
-                <YAxis hide="true" />
+                <YAxis tick={{ fill: 'white' }} />
                 <Tooltip content={<CustomTooltip />} />
-                <Area type="monotone" dataKey="sensorReading" stroke="#00e304" fill="#00e304" />
-            </AreaChart>
+                <Area type="monotone" dataKey="sensorReading" stroke="#00e304" strokeWidth="3" fillOpacity={0} fill="#000000" />
+              </AreaChart>
+              </ResponsiveContainer>
             </div>
-            <ul>
-                {getTentTemps()}
-            </ul>
         </div>
     )
 
