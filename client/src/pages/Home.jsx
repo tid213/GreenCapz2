@@ -5,6 +5,9 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import Readings from '../pages/Readings';
 import LandingPage from '../pages/LandingPage';
+import character from '../images/character.png';
+import activity from '../images/activity.svg';
+import greenLock from '../images/green-lock.svg';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -44,7 +47,27 @@ const Home = () => {
             {" "}
             Welcome <span>{username}</span>
           </h4>
+          <div className="dashboard-img">
+          <img src={character}></img>
+          </div>
+          
           <Readings username={username} />
+          <div onClick={Logout} className="button-div">
+                <div className="button-img">
+                <img src={greenLock}></img>
+                </div>
+                <div className="button-text">
+                <p>Logout</p>
+                </div>
+            </div>
+            <div onClick={AddReadingRedirect} className="button-div">
+                <div className="button-img">
+                <img src={activity}></img>
+                </div>
+                <div className="button-text">
+                <p>Reading+</p>
+                </div>
+            </div>
           <button onClick={Logout}>LOGOUT</button>
           <button onClick={AddReadingRedirect}>Add Reading</button>
         </div>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
+import character from '../images/character.png';
 import axios from "axios";
 import {
     AreaChart,
@@ -93,7 +94,7 @@ const Readings = (username) => {
                 <XAxis dataKey="createdAt" hide="true"/>
                 <YAxis tick={{ fill: 'white' }} />
                 <Tooltip content={<CustomTooltip />} />
-                <Area type="monotone" dataKey="sensorReading" stroke="#00e304" strokeWidth="3" fillOpacity={0} fill="#000000" />
+                <Area type="monotone" dataKey="sensorReading" stroke="#00ffae" strokeWidth="3" fillOpacity={0} fill="#000000" />
               </AreaChart>
               </ResponsiveContainer>
             </div>
