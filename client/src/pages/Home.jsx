@@ -7,7 +7,8 @@ import Readings from '../pages/Readings';
 import LandingPage from '../pages/LandingPage';
 import character from '../images/character.png';
 import activity from '../images/activity.svg';
-import greenLock from '../images/green-lock.svg';
+import lock from '../images/lock.svg';
+import thermometer from '../images/thermometer.png';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -43,33 +44,45 @@ const Home = () => {
     return (
       <>
         <div className="home_page">
+          <div className="home-page-header">
+          <div className="dashboard-img">
+          
+          </div>
           <h4>
             {" "}
             Welcome <span>{username}</span>
           </h4>
-          <div className="dashboard-img">
-          <img src={character}></img>
-          </div>
           
-          <Readings username={username} />
-          <div onClick={Logout} className="button-div">
-                <div className="button-img">
-                <img src={greenLock}></img>
-                </div>
-                <div className="button-text">
-                <p>Logout</p>
-                </div>
-            </div>
-            <div onClick={AddReadingRedirect} className="button-div">
+          </div>
+          <div className="dashboard-buttons"> 
+              <div onClick={AddReadingRedirect} className="button-div">
                 <div className="button-img">
                 <img src={activity}></img>
                 </div>
                 <div className="button-text">
                 <p>Reading+</p>
                 </div>
-            </div>
-          <button onClick={Logout}>LOGOUT</button>
-          <button onClick={AddReadingRedirect}>Add Reading</button>
+              </div>
+              <div onClick={Logout} className="button-div">
+                <div className="button-img">
+                <img src={lock}></img>
+                </div>
+                <div className="button-text">
+                <p>Logout</p>
+                </div>
+              </div>
+          </div>
+          <div className="live-readings">
+          <div className="button-div tent-reading-div">
+                <div className="button-img tent-reading-img">
+                <img src={thermometer}></img>
+                </div>
+                <div className="button-text tent-reading">
+                <p>78f</p>
+                </div>
+              </div>
+          </div>
+          <Readings username={username} />
         </div>
       </>
     );
