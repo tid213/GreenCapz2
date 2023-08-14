@@ -189,6 +189,30 @@ span a {
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+.tent-reading-div{
+  width: 30vw;
+  height: 5vh;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #00e304;
+  padding: 0;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.water-reading-div{
+  width: 30vw;
+  height: 5vh;
+  margin-bottom: .5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #04c7c7;
+  padding: 0;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
 .button-text{
   display: flex;
   align-items: center;
@@ -200,7 +224,6 @@ span a {
   font-family: 'Dosis', sans-serif;
   color: white;
 }
-
 
 .button-img{
   background-color: white;
@@ -214,7 +237,31 @@ span a {
   border-bottom-left-radius: 20px;
 }
 
-.tent-reading-img{
+.live-readings{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90vw;
+  border: 3px solid white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.live-readings h3{
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+}
+
+.readings-time{
+  font-size: .75rem;
+}
+
+.live-tent{
+  display: flex;
+  flex-direction: column;
+}
+
+.tent-reading-img, .water-reading-img{
   background-color: black;
   width: 30%;
   height: 100%;
@@ -224,6 +271,11 @@ span a {
   border: 3px solid white;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  font-size: .75rem;
+}
+.water-reading-img img{
+  max-width: 24px;
+  max-height: 24px;
 }
 
 .readingsContainer{

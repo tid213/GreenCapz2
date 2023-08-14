@@ -9,6 +9,9 @@ import character from '../images/character.png';
 import activity from '../images/activity.svg';
 import lock from '../images/lock.svg';
 import thermometer from '../images/thermometer.png';
+import humidity from '../images/humidity.png';
+import phIcon from '../images/ph-icon.png';
+import ppmIcon from '../images/ppm-icon.png';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -37,9 +40,16 @@ const Home = () => {
     removeCookie("token");
     setLoggedIn(false);
   };
+
   const AddReadingRedirect = () => {
     navigate("/addreading");
   };
+
+  const getTime = () => {
+    let event = Date.now();
+    let formatedTime = new Date(event).toLocaleString();
+    return formatedTime;
+}
   if (loggedIn){
     return (
       <>
@@ -54,6 +64,58 @@ const Home = () => {
           </h4>
           
           </div>
+          <div className="live-readings">
+            <div className="live-tent">
+              <h3>Tent</h3>
+              <div className="button-div tent-reading-div">
+                <div className="button-img tent-reading-img">
+                <img src={thermometer}></img>
+                </div>
+                <div className="button-text tent-reading">
+                <p>78f</p>
+                </div>
+              </div>
+              <div className="button-div tent-reading-div">
+                <div className="button-img tent-reading-img">
+                <img src={humidity}></img>
+                </div>
+                <div className="button-text tent-reading">
+                <p>55%</p>
+                </div>
+              </div>
+            </div>
+            <div className="live-water">
+              <h3>Water</h3>
+              <div className="button-div water-reading-div">
+                <div className="button-img water-reading-img">
+                <img src={thermometer}></img>
+                </div>
+                <div className="button-text water-reading">
+                <p>78f</p>
+                </div>
+              </div>
+              <div className="button-div water-reading-div">
+                <div className="button-img water-reading-img">
+                <p>pH</p>
+                </div>
+                <div className="button-text water-reading">
+                <p>6.0</p>
+                </div>
+              </div>
+              <div className="button-div water-reading-div">
+                <div className="button-img water-reading-img">
+                <p>PPM</p>
+                </div>
+                <div className="button-text water-reading">
+                <p>604</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="readings-time">
+            <p>Last update: {getTime()}</p>
+          </div>
+          <Readings username={username} />
           <div className="dashboard-buttons"> 
               <div onClick={AddReadingRedirect} className="button-div">
                 <div className="button-img">
@@ -72,17 +134,6 @@ const Home = () => {
                 </div>
               </div>
           </div>
-          <div className="live-readings">
-          <div className="button-div tent-reading-div">
-                <div className="button-img tent-reading-img">
-                <img src={thermometer}></img>
-                </div>
-                <div className="button-text tent-reading">
-                <p>78f</p>
-                </div>
-              </div>
-          </div>
-          <Readings username={username} />
         </div>
       </>
     );
