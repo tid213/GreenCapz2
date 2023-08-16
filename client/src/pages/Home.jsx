@@ -10,8 +10,7 @@ import activity from '../images/activity.svg';
 import lock from '../images/lock.svg';
 import thermometer from '../images/thermometer.png';
 import humidity from '../images/humidity.png';
-import phIcon from '../images/ph-icon.png';
-import ppmIcon from '../images/ppm-icon.png';
+import greenMushroom from '../images/green-mushroom.png';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -55,14 +54,14 @@ const Home = () => {
       <>
         <div className="home_page">
           <div className="home-page-header">
-          <div className="dashboard-img">
+          <h4>
+            Green Capz
+          </h4>
+            <img src={greenMushroom}></img>
           
           </div>
-          <h4>
-            {" "}
-            Welcome <span>{username}</span>
-          </h4>
-          
+          <div className="div-title">
+            <h3>Live Readings</h3>
           </div>
           <div className="live-readings">
             <div className="live-tent">
@@ -114,6 +113,9 @@ const Home = () => {
           </div>
           <div className="readings-time">
             <p>Last update: {getTime()}</p>
+          </div>
+          <div className="div-title">
+            <h3>Tent Readings</h3>
           </div>
           <Readings username={username} />
           <div className="dashboard-buttons"> 

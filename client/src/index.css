@@ -117,9 +117,22 @@ span a {
 .home-page-header{
   display: flex;
   flex-direction: row;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100vw;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.div-title{
+  font-family: 'Dosis', sans-serif;
+}
+
+.home-page-header img{
+  max-width: 15vw;
+  max-height: 15vh;
 }
 
 .landing-page{
