@@ -17,6 +17,10 @@ const Readings = (username) => {
 
     const [userReadings, setUserReadings] = useState({});
     const [tentTemps, setTentTemps] = useState({});
+    const [tentHumidity, setTentHumidity] = useState({});
+    const [waterTemps, setWaterTemps] = useState({});
+    const [waterPH, setWaterPH] = useState({});
+    const [waterPPM, setWaterPPM] = useState({});
 
     useEffect(()=>{
         const sensorUser = username.username;
@@ -26,9 +30,13 @@ const Readings = (username) => {
                 {sensorUser},
                 { withCredentials: true }
               );
-              const {status, message, tentTemp} = data;
+              const {status, message, tentTemp, tentHum, waterTemp, waterPh, waterPpm} = data;
               setUserReadings(message);
               setTentTemps(tentTemp);
+              setTentHumidity(tentHum);
+              setWaterTemps(waterTemp);
+              setWaterPH(waterPh);
+              setWaterPPM(waterPpm);
         }
 
         getUserData();
@@ -73,11 +81,54 @@ const Readings = (username) => {
         return null;
       };
 
+      const CustomTooltipHumidity = ({ active, payload, label }) => {
+        if (active && payload && payload.length) {
+          return (
+            <div className="custom-tooltip tooltip-div">
+              <p className="label">{`${payload[0].value}`}%</p>
+              <p className="desc">Reading taken:</p>
+              <p className="intro">{getNoteTime(label)}</p>
+            </div>
+          );
+        }
+      
+        return null;
+      };
+
+      const CustomTooltipPH = ({ active, payload, label }) => {
+        if (active && payload && payload.length) {
+          return (
+            <div className="custom-tooltip tooltip-div">
+              <p className="label">{`${payload[0].value}`} pH</p>
+              <p className="desc">Reading taken:</p>
+              <p className="intro">{getNoteTime(label)}</p>
+            </div>
+          );
+        }
+      
+        return null;
+      };
+
+      const CustomTooltipPPM = ({ active, payload, label }) => {
+        if (active && payload && payload.length) {
+          return (
+            <div className="custom-tooltip tooltip-div">
+              <p className="label">{`${payload[0].value}`}ppm</p>
+              <p className="desc">Reading taken:</p>
+              <p className="intro">{getNoteTime(label)}</p>
+            </div>
+          );
+        }
+      
+        return null;
+      };
+
 
 
     return(
-        <div className="readingsContainer">
-            <h1>Tent Temperatures</h1>
+        <div>
+          <div className="readingsContainer">
+            <h1>Temperature</h1>
             <div className="tent-temp-chart">
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart
@@ -98,6 +149,102 @@ const Readings = (username) => {
               </AreaChart>
               </ResponsiveContainer>
             </div>
+          </div>
+          <div className="readingsContainer">
+            <h1>Humidity</h1>
+            <div className="tent-temp-chart">
+            <ResponsiveContainer width="100%" height="100%">
+              <AreaChart
+                width={300}
+                height={200}
+                data={tentHumidity}
+                 margin={{
+                    top: 5,
+                    right: 0,
+                    left: 0,
+                    bottom: 5
+                }}
+            >
+                <XAxis dataKey="createdAt" hide="true"/>
+                <YAxis tick={{ fill: 'white' }} />
+                <Tooltip content={<CustomTooltipHumidity />} />
+                <Area type="monotone" dataKey="sensorReading" stroke="#00e304" strokeWidth="3" fillOpacity={0} fill="#000000" />
+              </AreaChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+          <div className="readings-divider">
+          <h3>Water Readings</h3>
+          </div>
+          <div className="readingsContainer">
+            <h1>Temperature</h1>
+            <div className="tent-temp-chart">
+            <ResponsiveContainer width="100%" height="100%">
+              <AreaChart
+                width={300}
+                height={200}
+                data={waterTemps}
+                 margin={{
+                    top: 5,
+                    right: 0,
+                    left: 0,
+                    bottom: 5
+                }}
+            >
+                <XAxis dataKey="createdAt" hide="true"/>
+                <YAxis tick={{ fill: 'white' }} />
+                <Tooltip content={<CustomTooltip />} />
+                <Area type="monotone" dataKey="sensorReading" stroke="#04c7c7" strokeWidth="4" fillOpacity={0} fill="#000000" />
+              </AreaChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+          <div className="readingsContainer">
+            <h1>pH</h1>
+            <div className="tent-temp-chart">
+            <ResponsiveContainer width="100%" height="100%">
+              <AreaChart
+                width={300}
+                height={200}
+                data={waterPH}
+                 margin={{
+                    top: 5,
+                    right: 0,
+                    left: 0,
+                    bottom: 5
+                }}
+            >
+                <XAxis dataKey="createdAt" hide="true"/>
+                <YAxis tick={{ fill: 'white' }} />
+                <Tooltip content={<CustomTooltipPH />} />
+                <Area type="monotone" dataKey="sensorReading" stroke="#04c7c7" strokeWidth="4" fillOpacity={0} fill="#000000" />
+              </AreaChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+          <div className="readingsContainer">
+            <h1>PPM</h1>
+            <div className="tent-temp-chart">
+            <ResponsiveContainer width="100%" height="100%">
+              <AreaChart
+                width={300}
+                height={200}
+                data={waterPPM}
+                 margin={{
+                    top: 5,
+                    right: 0,
+                    left: 0,
+                    bottom: 5
+                }}
+            >
+                <XAxis dataKey="createdAt" hide="true"/>
+                <YAxis tick={{ fill: 'white' }} />
+                <Tooltip content={<CustomTooltipPPM />} />
+                <Area type="monotone" dataKey="sensorReading" stroke="#04c7c7" strokeWidth="4" fillOpacity={0} fill="#000000" />
+              </AreaChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
         </div>
     )
 

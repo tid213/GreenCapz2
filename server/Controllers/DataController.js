@@ -27,11 +27,20 @@ module.exports.Readings = async (req, res, next) => {
             for (let i=0; i<userReadings.length; i++){
                 if (userReadings[i].sensorName === "tent-temp"){
                     tentTemp.push(userReadings[i]); 
+                } else if (userReadings[i].sensorName === "tent-hum"){
+                    tentHum.push(userReadings[i]);
+                } else if (userReadings[i].sensorName === "water-temp"){
+                    waterTemp.push(userReadings[i]);
+                } else if (userReadings[i].sensorName === "water-ph"){
+                    waterPh.push(userReadings[i]);
+                } else if (userReadings[i].sensorName === "water-ppm"){
+                    waterPpm.push(userReadings[i]);
                 }
             }
             res
             .status(201)
-            .json({message: userReadings, tentTemp: tentTemp});
+            .json({message: userReadings, tentTemp: tentTemp, tentHum: tentHum, 
+                waterTemp: waterTemp, waterPh: waterPh, waterPpm: waterPpm});
             next();
         }
     } catch (error) {

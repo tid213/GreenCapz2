@@ -120,8 +120,8 @@ span a {
   justify-content: space-between;
   align-items: center;
   margin-top: .5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
   width: 100vw;
   font-family: 'Bebas Neue', sans-serif;
 }
@@ -131,8 +131,8 @@ span a {
 }
 
 .home-page-header img{
-  max-width: 15vw;
-  max-height: 15vh;
+  max-width: 10vw;
+  max-height: 10vh;
 }
 
 .landing-page{
@@ -261,7 +261,7 @@ span a {
 }
 
 .live-readings h3{
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   text-align: center;
 }
 
@@ -273,6 +273,7 @@ span a {
   display: flex;
   flex-direction: column;
 }
+
 
 .tent-reading-img, .water-reading-img{
   background-color: black;
@@ -302,6 +303,15 @@ span a {
   align-items: center;
   border: 3px solid white;
   border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.readingsContainer h1{
+  font-family: 'Bebas Neue', sans-serif;
+}
+.readings-divider{
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  margin: 1rem;
 }
 .tooltip-div{
   padding: 6px;

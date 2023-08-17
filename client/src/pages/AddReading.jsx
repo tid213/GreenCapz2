@@ -100,7 +100,7 @@ const AddReading = () =>{
               <option value="tent-temp">Tent Temp</option>
               <option value="tent-hum">Tent Humidity</option>
               <option value="water-temp">Water Temp</option>
-              <option value="warer-ph">Water pH</option>
+              <option value="water-ph">Water pH</option>
               <option value="water-ppm">Water PPM</option>
             </select>
            </div>
