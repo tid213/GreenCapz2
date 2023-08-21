@@ -11,6 +11,7 @@ import lock from '../images/lock.svg';
 import thermometer from '../images/thermometer.png';
 import humidity from '../images/humidity.png';
 import greenMushroom from '../images/green-mushroom.png';
+import calendar from '../images/calendar.svg';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -60,9 +61,7 @@ const Home = () => {
             <img src={greenMushroom}></img>
           
           </div>
-          <div className="div-title">
-            <h3>Live Readings</h3>
-          </div>
+          
           <div className="live-readings">
             <div className="live-tent">
               <h3>Tent</h3>
@@ -114,8 +113,37 @@ const Home = () => {
           <div className="readings-time">
             <p>Last update: {getTime()}</p>
           </div>
-          <div className="div-title">
-            <h3>Tent Readings</h3>
+          <div className="chart-toggle">
+            <div className="week-toggle">
+              <div className="toggle-button">
+                <div className="toggle-button-img">
+                <img src={calendar}></img>
+                </div>
+                <div className="toggle-button-text">
+                <p>7</p>
+                </div>
+              </div>
+            </div>
+            <div className="month-toggle">
+              <div className="toggle-button toggle-button-off">
+                <div className=" toggle-button-img">
+                <img src={calendar}></img>
+                </div>
+                <div className="toggle-button-text">
+                <p>30</p>
+                </div>
+              </div>
+            </div>
+            <div className="three-month-toggle">
+              <div className="toggle-button toggle-button-off">
+                <div className="toggle-button-img">
+                <img src={calendar}></img>
+                </div>
+                <div className="toggle-button-text">
+                <p>90</p>
+                </div>
+              </div>
+            </div>
           </div>
           <Readings username={username} />
           <div className="dashboard-buttons"> 

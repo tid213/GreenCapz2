@@ -173,10 +173,7 @@ const Readings = (username) => {
               </ResponsiveContainer>
             </div>
           </div>
-          <div className="readings-divider">
-          <h3>Water Readings</h3>
-          </div>
-          <div className="readingsContainer">
+          <div className="readingsContainer water-div-glow">
             <h1>Temperature</h1>
             <div className="tent-temp-chart">
             <ResponsiveContainer width="100%" height="100%">
@@ -199,7 +196,7 @@ const Readings = (username) => {
               </ResponsiveContainer>
             </div>
           </div>
-          <div className="readingsContainer">
+          <div className="readingsContainer water-div-glow">
             <h1>pH</h1>
             <div className="tent-temp-chart">
             <ResponsiveContainer width="100%" height="100%">
@@ -222,7 +219,7 @@ const Readings = (username) => {
               </ResponsiveContainer>
             </div>
           </div>
-          <div className="readingsContainer">
+          <div className="readingsContainer water-div-glow">
             <h1>PPM</h1>
             <div className="tent-temp-chart">
             <ResponsiveContainer width="100%" height="100%">
