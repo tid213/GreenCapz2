@@ -206,30 +206,7 @@ span a {
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.tent-reading-div{
-  width: 30vw;
-  height: 5vh;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #00e304;
-  padding: 0;
-  border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-.water-reading-div{
-  width: 30vw;
-  height: 5vh;
-  margin-bottom: .5rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #04c7c7;
-  padding: 0;
-  border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
+
 .button-text{
   display: flex;
   align-items: center;
@@ -258,8 +235,20 @@ span a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 75vw;
+  width: 90vw;
   border-radius: 10px;
+}
+.live-tent-readings{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.live-water-readings{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 2rem;
 }
 
 .live-readings h3{
@@ -368,6 +357,34 @@ span a {
   margin-bottom: 1rem;
   margin-top: 2rem;
 }
+
+.tent-reading-div{
+  width: 25vw;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #00e304;
+  padding: 0;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: .5rem;
+}
+
+.water-reading-div{
+  width: 25vw;
+  height: 5vh;
+  margin-bottom: .5rem;
+  margin-right: .5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #04c7c7;
+  padding: 0;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 .toggle-button-off{
   width: 25vw;
   height: 5vh;
@@ -391,7 +408,54 @@ span a {
   background-color: #000;
 }
 
+.tent-reading-img{
+  width: 2.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #000;
+}
+
+.water-reading-img{
+  width: 2.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #000;
+}
+
 .toggle-button-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Dosis', sans-serif;
+  color: white;
+}
+.tent-reading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Dosis', sans-serif;
+  color: white;
+}
+
+.water-reading{
   display: flex;
   align-items: center;
   justify-content: center;
