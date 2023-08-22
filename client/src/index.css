@@ -118,7 +118,6 @@ span a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   margin-top: .5rem;
   padding-left: .5rem;
   padding-right: .5rem;
@@ -126,13 +125,18 @@ span a {
   font-family: 'Bebas Neue', sans-serif;
 }
 
+.home-page-header h5{
+  font-family: 'Dosis', sans-serif;
+  
+}
+
 .div-title{
   font-family: 'Dosis', sans-serif;
 }
 
 .home-page-header img{
-  max-width: 10vw;
-  max-height: 10vh;
+  max-width: 15vw;
+  max-height: 15vh;
 }
 
 .landing-page{
@@ -254,9 +258,7 @@ span a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 90vw;
-  border: 3px solid white;
-  padding: 1rem;
+  width: 75vw;
   border-radius: 10px;
 }
 
@@ -272,7 +274,10 @@ span a {
 .live-tent{
   display: flex;
   flex-direction: column;
+  width: 33%;
 }
+
+
 
 
 .tent-reading-img, .water-reading-img{
@@ -301,10 +306,9 @@ span a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid white;
   border-radius: 10px;
-  margin-bottom: 2rem;
-  box-shadow: 0 0 10px 5px #00e304;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 8px 5px #00e304;
 }
 .readingsContainer h1{
   

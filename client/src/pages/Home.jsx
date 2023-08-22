@@ -59,7 +59,9 @@ const Home = () => {
             Green Capz
           </h4>
             <img src={greenMushroom}></img>
-          
+            <h5>
+            omgnoez
+          </h5>
           </div>
           
           <div className="live-readings">
