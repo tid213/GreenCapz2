@@ -65,9 +65,6 @@ const Home = () => {
           </div>
           
           <div className="live-readings">
-            <div className="live-tent">
-              <h3>Tent</h3>
-              <div className="live-tent-readings">
                <div className="tent-reading-div">
                 <div className="tent-reading-img">
                 <img src={thermometer}></img>
@@ -82,20 +79,6 @@ const Home = () => {
                 </div>
                 <div className="tent-reading">
                 <p>55%</p>
-                </div>
-               </div>
-              </div>
-              
-            </div>
-            <div className="live-water">
-              <h3>Water</h3>
-              <div className="live-water-readings">
-              <div className="button-div water-reading-div">
-                <div className="button-img water-reading-img">
-                <img src={thermometer}></img>
-                </div>
-                <div className="button-text water-reading">
-                <p>78f</p>
                 </div>
               </div>
               <div className="button-div water-reading-div">
@@ -113,8 +96,6 @@ const Home = () => {
                 <div className="button-text water-reading">
                 <p>604</p>
                 </div>
-              </div>
-              </div>
             </div>
           </div>
           <div className="readings-time">
