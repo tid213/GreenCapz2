@@ -50,23 +50,12 @@ const Readings = (username) => {
         return formatedTime;
     }
 
-    const showReadings = () => {
-        let list = [];
-        for(let i=0; i<userReadings.length; i++){
-            let key = i + 1;
-            list.push(<li key={key}>{userReadings[i].sensorName}{userReadings[i].sensorReading}{userReadings[i].sensorType}</li>)
-        }
-        return list;
+    const getTime = () => {
+      let event = Date.now();
+      let formatedTime = new Date(event).toLocaleString();
+      return formatedTime;
     }
 
-    const getTentTemps = () => {
-        let list = [];
-        for (let i=0; i<tentTemps.length; i++){
-            let key = i + 1;
-            list.push(<li key={key}>{tentTemps[i].sensorReading}</li>)
-        }
-        return list;
-    }
     const CustomTooltip = ({ active, payload, label }) => {
         if (active && payload && payload.length) {
           return (
@@ -142,12 +131,15 @@ const Readings = (username) => {
                     bottom: 5
                 }}
             >
-                <XAxis dataKey="createdAt" hide="true"/>
+                <XAxis tick={false}/>
                 <YAxis tick={{ fill: 'white' }} />
                 <Tooltip content={<CustomTooltip />} />
                 <Area type="monotone" dataKey="sensorReading" stroke="#00e304" strokeWidth="3" fillOpacity={0} fill="#000000" />
               </AreaChart>
               </ResponsiveContainer>
+              <div className="reading-chart-timestamp">
+              <p>Last reading taken: {getTime()}</p>
+              </div>
             </div>
           </div>
           <div className="readingsContainer">

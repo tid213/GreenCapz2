@@ -101,6 +101,9 @@ const Home = () => {
           <div className="readings-time">
             <p>Last update: {getTime()}</p>
           </div>
+          <div className="chart-toggle-header">
+            <h3>Past Readings</h3>
+          </div>
           <div className="chart-toggle">
             <div className="week-toggle">
               <div className="toggle-button">

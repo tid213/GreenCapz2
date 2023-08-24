@@ -346,17 +346,21 @@ span a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  margin-bottom: 3rem;
-  box-shadow: 0 0 8px 5px #00e304;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  margin-bottom: 1rem;
+  background-color: #3a3b3a;
+  
 }
 .readingsContainer h1{
   
   font-family: 'Dosis', sans-serif;
 }
-.water-div-glow{
-  box-shadow: 0 0 10px 5px #04c7c7;
+
+.reading-chart-timestamp p{
+  text-align: center;
 }
+
 .readings-divider{
   font-family: 'Bebas Neue', sans-serif;
   text-align: center;
@@ -406,7 +410,10 @@ span a {
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
   margin-bottom: 1rem;
-  margin-top: 2rem;
+}
+
+.chart-toggle-header{
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .tent-reading-div{
