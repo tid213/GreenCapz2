@@ -131,15 +131,15 @@ const Readings = (username) => {
                     bottom: 5
                 }}
             >
-                <XAxis tick={false}/>
+                <XAxis dataKey="createdAt" tick={false}/>
                 <YAxis tick={{ fill: 'white' }} />
                 <Tooltip content={<CustomTooltip />} />
                 <Area type="monotone" dataKey="sensorReading" stroke="#00e304" strokeWidth="3" fillOpacity={0} fill="#000000" />
               </AreaChart>
               </ResponsiveContainer>
-              <div className="reading-chart-timestamp">
+            </div>
+            <div className="reading-chart-timestamp">
               <p>Last reading taken: {getTime()}</p>
-              </div>
             </div>
           </div>
           <div className="readingsContainer">
