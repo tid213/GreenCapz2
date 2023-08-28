@@ -210,21 +210,6 @@ span a {
   color: #00e304;
 }
 
-.home_page button {
-  background-color: rgb(27, 73, 83);
-  color: #fff;
-  cursor: pointer;
-  padding: 1rem 3rem;
-  font-size: 2rem;
-  border-radius: 2rem;
-  transition: ease-in 0.3s;
-  border: none;
-}
-
-.home_page button:hover {
-  background-color: rgba(0, 212, 255, 1);
-}
-
 .landing-img img{
   max-width: 50vw;
   max-height: 15vh;
@@ -537,12 +522,13 @@ span a {
   color: white;
 }
 
+.toggle-chart-length{
+  background-color: white;
+}
+
 @media only screen and (max-width: 1200px){
   .home_page{
     font-size: 1.5rem;
   }
-  .home_page button {
-    padding: 0.6rem 1rem;
-    font-size: 1.5rem;
-  }
+  
 }

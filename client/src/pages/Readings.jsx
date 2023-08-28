@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { useCookies } from "react-cookie";
-import character from '../images/character.png';
 import axios from "axios";
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import {
     AreaChart,
     Area,
@@ -21,6 +20,7 @@ const Readings = (username) => {
     const [waterTemps, setWaterTemps] = useState({});
     const [waterPH, setWaterPH] = useState({});
     const [waterPPM, setWaterPPM] = useState({});
+    const [chartLength, setChartLength] = useState("web");
 
     useEffect(()=>{
         const sensorUser = username.username;
@@ -112,10 +112,29 @@ const Readings = (username) => {
         return null;
       };
 
+      const handleChange = (e) => {
+        e.preventDefault();
+        setChartLength(e.target.value)
+
+      }
+
 
 
     return(
         <div>
+          <div className="toggle-chart-length">
+          <ToggleButtonGroup
+            color="primary"
+            value={chartLength}
+            exclusive
+            onChange={handleChange}
+            aria-label="Platform"
+          >
+            <ToggleButton value="web">Web</ToggleButton>
+            <ToggleButton value="android">Android</ToggleButton>
+            <ToggleButton value="ios">iOS</ToggleButton>
+          </ToggleButtonGroup>
+          </div>
           <div className="readingsContainer">
             <h1>Temperature</h1>
             <div className="tent-temp-chart">
