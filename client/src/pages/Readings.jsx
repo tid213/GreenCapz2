@@ -124,7 +124,7 @@ const Readings = (username) => {
         <div>
           <div className="toggle-chart-length">
           <ToggleButtonGroup
-            color="primary"
+            color="success"
             value={chartLength}
             exclusive
             onChange={handleChange}
