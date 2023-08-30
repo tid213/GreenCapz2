@@ -380,9 +380,42 @@ span a {
 
 .chart-toggle{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90vw;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border: 2px solid white;
+  font-family: 'Bebas Neue', sans-serif;
+  border-radius: 10px;
+  color: #3a3b3a;
+  background-color: rgba(58, 59, 58, .75);
+}
+.chart-toggle-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  border-right: 2px solid white;
+  padding: .5rem;
+  color: white;
+}
+.chart-toggle-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  border-right: 2px solid white;
+  padding: .5rem;
+}
+.chart-toggle-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  padding: .5rem;
 }
 .toggle-button{
   width: 25vw;
@@ -522,14 +555,7 @@ span a {
   color: white;
 }
 
-.toggle-chart-length{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  width: 70vw;
 
-}
 
 @media only screen and (max-width: 1200px){
   .home_page{

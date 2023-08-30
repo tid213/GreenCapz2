@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import {
     AreaChart,
     Area,
@@ -12,6 +10,7 @@ import {
     ResponsiveContainer
   } from "recharts";
 
+
 const Readings = (username) => {
 
     const [userReadings, setUserReadings] = useState({});
@@ -20,7 +19,7 @@ const Readings = (username) => {
     const [waterTemps, setWaterTemps] = useState({});
     const [waterPH, setWaterPH] = useState({});
     const [waterPPM, setWaterPPM] = useState({});
-    const [chartLength, setChartLength] = useState("web");
+    const [chartLength, setChartLength] = useState("7");
 
     useEffect(()=>{
         const sensorUser = username.username;
@@ -112,6 +111,56 @@ const Readings = (username) => {
         return null;
       };
 
+      const handleToggle = (num) => {
+          setChartLength(num)
+      }
+
+      const showToggle = () => {
+        if (chartLength === "7"){
+          return(
+            <div className="chart-toggle">
+            <div className="chart-toggle-left active" onClick={handleToggle("7")}>
+              <p>7</p>
+            </div>
+            <div className="chart-toggle-center" onClick={handleToggle("14")}>
+              <p>14</p>
+            </div>
+            <div className="chart-toggle-right" onClick={handleToggle("30")}>
+              <p>30</p>
+            </div>
+          </div>
+          )
+        } else if(chartLength === "14"){
+          return(
+            <div className="chart-toggle">
+            <div className="chart-toggle-left" onClick={handleToggle("7")}>
+              <p>7</p>
+            </div>
+            <div className="chart-toggle-center active" onClick={handleToggle("14")}>
+              <p>14</p>
+            </div>
+            <div className="chart-toggle-right" onClick={handleToggle("30")}>
+              <p>30</p>
+            </div>
+          </div>
+          )
+        } else if(chartLength === "30"){
+          return(
+            <div className="chart-toggle">
+            <div className="chart-toggle-left" onClick={handleToggle("7")}>
+              <p>7</p>
+            </div>
+            <div className="chart-toggle-center" onClick={handleToggle("14")}>
+              <p>14</p>
+            </div>
+            <div className="chart-toggle-right  active" onClick={handleToggle("30")}>
+              <p>30</p>
+            </div>
+          </div>
+          )
+        }
+      }
+
       const handleChange = (e) => {
         e.preventDefault();
         setChartLength(e.target.value)
@@ -122,19 +171,7 @@ const Readings = (username) => {
 
     return(
         <div>
-          <div className="toggle-chart-length">
-          <ToggleButtonGroup
-            color="success"
-            value={chartLength}
-            exclusive
-            onChange={handleChange}
-            aria-label="Platform"
-          >
-            <ToggleButton value="web">Web</ToggleButton>
-            <ToggleButton value="android">Android</ToggleButton>
-            <ToggleButton value="ios">iOS</ToggleButton>
-          </ToggleButtonGroup>
-          </div>
+          {showToggle()}
           <div className="readingsContainer">
             <h1>Temperature</h1>
             <div className="tent-temp-chart">

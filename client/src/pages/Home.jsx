@@ -101,41 +101,6 @@ const Home = () => {
           <div className="readings-time">
             <p>Last update: {getTime()}</p>
           </div>
-          <div className="chart-toggle-header">
-            <h3>Past Readings</h3>
-          </div>
-          <div className="chart-toggle">
-            <div className="week-toggle">
-              <div className="toggle-button">
-                <div className="toggle-button-img">
-                <img src={calendar}></img>
-                </div>
-                <div className="toggle-button-text">
-                <p>7</p>
-                </div>
-              </div>
-            </div>
-            <div className="month-toggle">
-              <div className="toggle-button toggle-button-off">
-                <div className=" toggle-button-img">
-                <img src={calendar}></img>
-                </div>
-                <div className="toggle-button-text">
-                <p>30</p>
-                </div>
-              </div>
-            </div>
-            <div className="three-month-toggle">
-              <div className="toggle-button toggle-button-off">
-                <div className="toggle-button-img">
-                <img src={calendar}></img>
-                </div>
-                <div className="toggle-button-text">
-                <p>90</p>
-                </div>
-              </div>
-            </div>
-          </div>
           <Readings username={username} />
           <div className="dashboard-buttons"> 
               <div onClick={AddReadingRedirect} className="button-div">
