@@ -39,7 +39,7 @@ const Readings = (username) => {
         }
 
         getUserData();
-    }, [username]);
+    }, [chartLength]);
 
 
     const getNoteTime = (utcDate) => {
@@ -115,51 +115,52 @@ const Readings = (username) => {
           setChartLength(num)
       }
 
-      const showToggle = () => {
-        if (chartLength === "7"){
+      const changeToggle = () => {
+        if(chartLength === "7"){
           return(
             <div className="chart-toggle">
-            <div className="chart-toggle-left active" onClick={handleToggle("7")}>
+            <div className="chart-toggle-left active" onClick={()=>handleToggle("7")}>
               <p>7</p>
             </div>
-            <div className="chart-toggle-center" onClick={handleToggle("14")}>
+            <div className="chart-toggle-center" onClick={()=>handleToggle("14")}>
               <p>14</p>
             </div>
-            <div className="chart-toggle-right" onClick={handleToggle("30")}>
+            <div className="chart-toggle-right" onClick={()=>handleToggle("30")}>
               <p>30</p>
             </div>
           </div>
           )
-        } else if(chartLength === "14"){
+        } else if (chartLength === "14"){
           return(
-            <div className="chart-toggle">
-            <div className="chart-toggle-left" onClick={handleToggle("7")}>
+           <div className="chart-toggle">
+            <div className="chart-toggle-left" onClick={()=>handleToggle("7")}>
               <p>7</p>
             </div>
-            <div className="chart-toggle-center active" onClick={handleToggle("14")}>
+            <div className="chart-toggle-center active" onClick={()=>handleToggle("14")}>
               <p>14</p>
             </div>
-            <div className="chart-toggle-right" onClick={handleToggle("30")}>
+            <div className="chart-toggle-right" onClick={()=>handleToggle("30")}>
               <p>30</p>
             </div>
-          </div>
+           </div>
           )
-        } else if(chartLength === "30"){
+        } else if (chartLength === "30"){
           return(
             <div className="chart-toggle">
-            <div className="chart-toggle-left" onClick={handleToggle("7")}>
+            <div className="chart-toggle-left" onClick={()=>handleToggle("7")}>
               <p>7</p>
             </div>
-            <div className="chart-toggle-center" onClick={handleToggle("14")}>
+            <div className="chart-toggle-center" onClick={()=>handleToggle("14")}>
               <p>14</p>
             </div>
-            <div className="chart-toggle-right  active" onClick={handleToggle("30")}>
+            <div className="chart-toggle-right active" onClick={()=>handleToggle("30")}>
               <p>30</p>
             </div>
           </div>
           )
         }
       }
+
 
       const handleChange = (e) => {
         e.preventDefault();
@@ -171,7 +172,8 @@ const Readings = (username) => {
 
     return(
         <div>
-          {showToggle()}
+          {changeToggle()}
+          <div className="toggle-show"><p>Showing {chartLength} days</p></div>
           <div className="readingsContainer">
             <h1>Temperature</h1>
             <div className="tent-temp-chart">

@@ -386,11 +386,11 @@ span a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   border: 2px solid white;
   font-family: 'Bebas Neue', sans-serif;
-  border-radius: 10px;
-  color: #3a3b3a;
+  border-radius: 5px;
+  color: #6c826c;
   background-color: rgba(58, 59, 58, .75);
 }
 .chart-toggle-left{
@@ -400,7 +400,6 @@ span a {
   width: 33%;
   border-right: 2px solid white;
   padding: .5rem;
-  color: white;
 }
 .chart-toggle-center{
   display: flex;
@@ -416,6 +415,17 @@ span a {
   align-items: center;
   width: 33%;
   padding: .5rem;
+}
+.active{
+  color: white;
+  background-color: rgba(0, 227, 4, .75);
+  width: 50%;
+}
+.toggle-show{
+  font-size: .75rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  
 }
 .toggle-button{
   width: 25vw;
