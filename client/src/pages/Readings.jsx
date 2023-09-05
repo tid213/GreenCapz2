@@ -172,8 +172,9 @@ const Readings = (username) => {
 
     return(
         <div>
+          <div className="past-data-title"><p>Past Data</p></div>
           {changeToggle()}
-          <div className="toggle-show"><p>Showing {chartLength} days</p></div>
+          <div className="toggle-show"><p>Showing data for {chartLength} days</p></div>
           <div className="readingsContainer">
             <h1>Temperature</h1>
             <div className="tent-temp-chart">
