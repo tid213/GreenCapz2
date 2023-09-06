@@ -18,6 +18,8 @@ const Home = () => {
   const [cookies, removeCookie] = useCookies([]);
   const [username, setUsername] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
+  const [navExpand, setNavExpand] = useState(false);
+
   useEffect(() => {
     const verifyCookie = async () => {
       if (!cookies.token) {
@@ -49,21 +51,60 @@ const Home = () => {
     let event = Date.now();
     let formatedTime = new Date(event).toLocaleString();
     return formatedTime;
-}
+  }
+
+  const toggleNav = (e) => {
+    e.preventDefault();
+    console.log("click")
+    if(navExpand === false){
+      setNavExpand(true)
+    } else{
+      setNavExpand(false)
+    }
+  }
+
+  const showNav = () => {
+    if (navExpand === false){
+      return(
+        <div className="home-page-header" onClick={toggleNav}>
+            <h4>
+            Green Capz
+            </h4>
+            <img src={greenMushroom}></img>
+            <h5>
+            omgnoez
+            </h5>
+         </div>
+      )
+    } else if (navExpand === true) {
+      return(
+        <div>
+          <div className="home-page-header" onClick={toggleNav}>
+            <h4>
+            Green Capz
+            </h4>
+            <img src={greenMushroom} onClick={toggleNav}></img>
+            <h5>
+            omgnoez
+            </h5>
+          </div>
+          <div className="spacer"></div>
+          <div className="header-expand">
+              <div onClick={AddReadingRedirect}><p>Add Reading</p></div>
+              <p>|</p>
+              <div><p>Change Password</p></div>
+              <p>|</p>
+              <div onClick={Logout}><p>Logout</p></div>
+            </div>
+        </div>
+      )
+    }
+  }
   if (loggedIn){
     return (
       <>
         <div className="home_page">
-          <div className="home-page-header">
-          <h4>
-            Green Capz
-          </h4>
-            <img src={greenMushroom}></img>
-            <h5>
-            omgnoez
-          </h5>
-          </div>
-          
+        {showNav()}
           <div className="live-readings">
                <div className="tent-reading-div">
                 <div className="tent-reading-img">
