@@ -143,24 +143,6 @@ const Home = () => {
             <p>Last update: {getTime()}</p>
           </div>
           <Readings username={username} />
-          <div className="dashboard-buttons"> 
-              <div onClick={AddReadingRedirect} className="button-div">
-                <div className="button-img">
-                <img src={activity}></img>
-                </div>
-                <div className="button-text">
-                <p>Reading+</p>
-                </div>
-              </div>
-              <div onClick={Logout} className="button-div">
-                <div className="button-img">
-                <img src={lock}></img>
-                </div>
-                <div className="button-text">
-                <p>Logout</p>
-                </div>
-              </div>
-          </div>
         </div>
       </>
     );
