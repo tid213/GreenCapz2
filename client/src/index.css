@@ -215,7 +215,7 @@ span a {
   font-family: 'Dosis', sans-serif;
   font-weight: bold;
   box-shadow: 0 4px 4px 0 rgba(66, 68, 90, 1);
-  animation: .5s ease-out 0s 1 slideInFromLeft;
+  
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   margin-bottom: 1rem;
