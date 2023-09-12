@@ -32,10 +32,6 @@ app.use(
 app.use(cookieParser());
 
 app.use(express.json());
-
-app.use("/", authRoute);
-app.use("/", dataRoute);
-
 if (process.env.NODE_ENV === 'production') {
   // Exprees will serve up production assets
   app.use(express.static('client/build'));
@@ -46,3 +42,5 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html'));
   });
 }
+app.use("/", authRoute);
+app.use("/", dataRoute);
