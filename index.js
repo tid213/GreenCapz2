@@ -32,15 +32,9 @@ app.use(
 app.use(cookieParser());
 
 app.use(express.json());
-if (process.env.NODE_ENV === 'production') {
-  // Exprees will serve up production assets
-  app.use(express.static('client/build'));
-
-  // Express serve up index.html file if it doesn't recognize route
-  const path = require('path');
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html'));
-  });
+if (process.env.NODE_ENV !== 'development') {
+  app.use(express.static('public'));
+  // app.use('/static', express.static(path.join(__dirname, 'build')));
 }
 app.use("/", authRoute);
 app.use("/", dataRoute);
