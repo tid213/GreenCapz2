@@ -32,7 +32,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/login",
+        "https://green-capz-c923aa3235e1.herokuapp.com:4000/login",
         {
           ...inputValue,
         },
