@@ -30,10 +30,10 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("clicked")
+    console.log("clicked");
     try {
       const { data } = await axios.post(
-        "https://green-capz-c923aa3235e1.herokuapp.com:4000/login", 
+        "http://green-capz-c923aa3235e1.herokuapp.com:4000/login", 
         {
           ...inputValue,
         },
@@ -47,6 +47,7 @@ const Login = () => {
           navigate("/");
         }, 1000);
       } else {
+        console.log("error")
         handleError(message);
       }
     } catch (error) {
