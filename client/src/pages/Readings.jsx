@@ -25,7 +25,7 @@ const Readings = (username) => {
         const sensorUser = username.username;
         const getUserData = async () => {
             const { data } = await axios.post(
-                "https://green-capz-c923aa3235e1.herokuapp.com:4000/readings",
+                "/readings",
                 {sensorUser},
                 { withCredentials: true }
               );
