@@ -33,7 +33,7 @@ const Login = () => {
     console.log("clicked");
     try {
       const { data } = await axios.post(
-        "https://green-capz-c923aa3235e1.herokuapp.com:4000/login", 
+        "/login", 
         {
           ...inputValue,
         },
