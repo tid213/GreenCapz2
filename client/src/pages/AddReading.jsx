@@ -63,7 +63,7 @@ const AddReading = () =>{
     e.preventDefault();
     try{
       const { data } = await axios.post(
-            "http://localhost:4000/addreading",
+            "/addreading",
             {
               ...readingData,
             },
@@ -125,7 +125,6 @@ const AddReading = () =>{
            </div>
            <button type="submit">Submit</button>
          </form>
-        <ToastContainer />
         </div>
     )
 
