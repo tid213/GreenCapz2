@@ -185,7 +185,7 @@ span a {
   padding-right: .5rem;
   width: 100vw;
   font-family: 'Bebas Neue', sans-serif;
-  margin-top: 0;
+  align-items: center;  
 }
 
 .home-page-header h5{
@@ -198,8 +198,8 @@ span a {
 }
 
 .home-page-header img{
-  max-width: 15vw;
-  max-height: 15vh;
+  max-width: 10vw;
+  max-height: 10vh;
   padding-bottom: .25rem;
 }
 .header-expand{
@@ -215,7 +215,6 @@ span a {
   font-family: 'Dosis', sans-serif;
   font-weight: bold;
   box-shadow: 0 4px 4px 0 rgba(66, 68, 90, 1);
-  
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   margin-bottom: 1rem;
@@ -303,6 +302,12 @@ span a {
   border: 3px solid white;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+.live-header{
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: .5rem;
 }
 
 .live-readings{

@@ -71,9 +71,6 @@ const Home = () => {
             Green Capz
             </h4>
             <img src={greenMushroom}></img>
-            <h5>
-            omgnoez
-            </h5>
          </div>
       )
     } else if (navExpand === true) {
@@ -84,9 +81,6 @@ const Home = () => {
             Green Capz
             </h4>
             <img src={greenMushroom} onClick={toggleNav}></img>
-            <h5>
-            omgnoez
-            </h5>
           </div>
           <div className="spacer"></div>
           <div className="header-expand">
@@ -105,6 +99,7 @@ const Home = () => {
       <>
         <div className="home_page">
         {showNav()}
+        <div className="live-header"><p>Live Readings</p></div>
           <div className="live-readings">
                <div className="tent-reading-div">
                 <div className="tent-reading-img">
