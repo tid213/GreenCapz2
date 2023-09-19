@@ -89,7 +89,8 @@ const AddReading = () =>{
       });
   };
     return(
-        <div className="form_container">
+        <div className="form-page">
+          <div className="form-container">
           <div>
             <h1>Add Reading</h1>
           </div>
@@ -126,6 +127,8 @@ const AddReading = () =>{
            <button type="submit">Submit</button>
          </form>
         </div>
+        </div>
+        
     )
 
 }

@@ -66,8 +66,8 @@ const Signup = () => {
   }
 
   return (
-    <>
-    <div className="form_container">
+    <div className="form-page">
+    <div className="form-container">
       <h2>Account Signup</h2>
       <div className="signup-error">
         <p>{errorMessage}</p>
@@ -119,7 +119,7 @@ const Signup = () => {
         </div>
       </div>
     </div>
-    </>
+    </div>
   );
 };
 

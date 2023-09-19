@@ -66,8 +66,8 @@ const Login = () => {
   }
 
   return (
-    <>
-    <div className="form_container">
+    <div className="form-page">
+      <div className="form-container">
       <h2>Account Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -95,18 +95,18 @@ const Login = () => {
           Don't have an account? <Link to={"/signup"}>Signup</Link>
         </span>
       </form>
-    </div>
-    <div className="home-button">
-      <div onClick={homeButton} className="button-div">
+     </div>
+      <div className="home-button">
+       <div onClick={homeButton} className="button-div">
         <div className="button-img">
           <img src={homeImg}></img>
         </div>
         <div className="button-text">
           <p>Home</p>
         </div>
+       </div>
       </div>
     </div>
-    </>
   );
 };
 
