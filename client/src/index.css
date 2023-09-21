@@ -196,7 +196,7 @@ span a {
 }
 
 .spacer{
-  margin-top: 4rem;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
   width: 70vw;
@@ -244,7 +244,6 @@ span a {
 }
 
 .landing-page{
-  height: 100vh;
   width: 100vw;
   background: #000;
   color: white;
@@ -294,18 +293,13 @@ span a {
   font-size: 1.5rem;
 }
 .landing-brand{
-  width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 87%;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  height: auto;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.5rem;
 }
 .landing-text{
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
   font-size: 1rem;
   font-family: 'Dosis', sans-serif;

@@ -31,9 +31,8 @@ const LandingPage = () => {
           </div>
           <div className="landing-title-div">
               <div className="landing-welcome"><h4>Welcome to..</h4></div>
-              <div className="landing-brand"><h4>Green Capz</h4></div>
-        </div>
-            
+          </div>
+          <div className="landing-brand"><h4>Green Capz</h4></div>
             <div className="spacer"></div>
             <div className="landing-text">
                 <p>Log in or sign up today!</p>
