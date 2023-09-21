@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import greenMushroom from '../images/green-mushroom.png';
 import login from '../images/user.svg';
 import signup from '../images/user-plus.svg';
-import landingImg from '../images/landing-img.png'
+import landingImg from '../images/background.png'
+import menu from '../images/menu.svg';
 import { useCookies } from "react-cookie";
 import axios from "axios";
 
@@ -24,24 +25,18 @@ const LandingPage = () => {
         <div className="landing-page">
           <div className="home-page-header">
             <h4>
-            Green Capz
+            
             </h4>
-            <img src={greenMushroom}></img>
+            <img src={menu}></img>
           </div>
-          <div className="landing-title">
-              <h4>Welcome to..</h4>
-            </div>
-          <div className="landing-page-image">
-            <img src={landingImg}></img>
-          </div>
-            <div className="landing-img">
-              <img src={greenMushroom}></img>
-            </div>
-            <div className="landing-name">
-            <p>Green Capz</p>
-            </div> 
+          <div className="landing-title-div">
+              <div className="landing-welcome"><h4>Welcome to..</h4></div>
+              <div className="landing-brand"><h4>Green Capz</h4></div>
+        </div>
+            
+            <div className="spacer"></div>
             <div className="landing-text">
-            <p>Login or Sign up to start logging today..</p>
+                <p>Log in or sign up today!</p>
             </div>
             <div className="landing-buttons">
             <div onClick={loginButton} className="button-div">
@@ -49,7 +44,7 @@ const LandingPage = () => {
                 <img src={login}></img>
                 </div>
                 <div className="button-text">
-                <p>Login</p>
+                <p>Log in</p>
                 </div>
             </div>
             <div onClick={signupButton} className="button-div">

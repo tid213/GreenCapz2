@@ -195,6 +195,15 @@ span a {
   align-items: center;  
 }
 
+.spacer{
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+  height: .25rem;
+  background-color: #3a3b3a;
+}
+
 .home-page-header h5{
   font-family: 'Dosis', sans-serif;
   
@@ -241,7 +250,6 @@ span a {
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 .landing-page-image{
   width: 100%;
@@ -260,30 +268,57 @@ span a {
 }
 
 .landing-buttons{
-  width: 85vw;
+  width: 80vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 .landing-name{
   font-family: 'Bebas Neue', sans-serif;
 }
-.landing-title{
+.landing-title-div{
   font-family: 'Dosis', sans-serif;
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 45vh;
+  margin-top: 5vh;
+}
+.landing-welcome{
+  margin-left: .5rem;
+  font-size: 1.5rem;
+}
+.landing-brand{
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 79%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
 }
 .landing-text{
+  margin-top: 1rem;
+  text-align: center;
   font-size: 1rem;
   font-family: 'Dosis', sans-serif;
-  margin-bottom: 2rem;
+ 
 }
 
 .button-div{
-  width: 40vw;
+  width: 35vw;
   height: 5vh;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   background-color: #00e304;
   padding: 0;
   border-bottom-left-radius: 20px;
@@ -296,20 +331,20 @@ span a {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   color: white;
 }
 
 .button-img{
-  background-color: white;
-  width: 30%;
+  background-color: black;
+  padding: .5rem;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid white;
+  border: 2px solid white;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
