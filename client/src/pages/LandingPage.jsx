@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import greenMushroom from '../images/green-mushroom.png';
 import login from '../images/user.svg';
 import signup from '../images/user-plus.svg';
-import landingImg from '../images/background.png'
+import mushroomChar from '../images/mushroom-char-2.png';
+import mushroomChar2 from '../images/mushroom-char-3.png';
 import menu from '../images/menu.svg';
 import { useCookies } from "react-cookie";
 import axios from "axios";
@@ -28,6 +29,8 @@ const LandingPage = () => {
           </div>
           <div className="landing-title-div">
               <div className="landing-welcome"><h4>Welcome to..</h4></div>
+              <div className="landing-image"><img src={mushroomChar}></img></div>
+              
           </div>
           <div className="landing-brand"><h4>Green Capz</h4></div>
            
@@ -42,14 +45,15 @@ const LandingPage = () => {
             <div className="spacer"></div>
             <div className="product-info-div">
                 <div className="product-info-title"><h4>Here to help..</h4></div>
+                <div className="landing-image"><img src={mushroomChar2}></img></div>
             </div>
             <div className="product-info-title-big"><h4>How?</h4></div>
             <div className="product-info">
                 <ul>
-                    <li>Optimize Plant Health: Precise nutrient monitoring ensures that plants receive the ideal mix of nutrients, promoting robust growth, higher yields, and healthier crops.</li>
-                    <li>Early Issue Detection: Regular monitoring helps detect nutrient imbalances or deficiencies before they harm plants, allowing for timely adjustments and preventing crop loss.</li>
-                    <li>Data-Driven Decisions: Data collected aids in fine-tuning nutrient solutions, resulting in consistent and predictable crop outcomes.</li>
-                    <li>Increased Productivity: By maintaining optimal nutrient levels, growers can achieve faster growth cycles and more abundant harvests, increasing overall productivity in hydroponic systems.</li>
+                    <li><b>Optimize Plant Health:</b> Precise nutrient monitoring ensures that plants receive the ideal mix of nutrients, promoting robust growth, higher yields, and healthier crops.</li>
+                    <li><b>Early Issue Detection:</b> Regular monitoring helps detect nutrient imbalances or deficiencies before they harm plants, allowing for timely adjustments and preventing crop loss.</li>
+                    <li><b>Data-Driven Decisions:</b> Data collected aids in fine-tuning nutrient solutions, resulting in consistent and predictable crop outcomes.</li>
+                    <li><b>Increased Productivity:</b> By maintaining optimal nutrient levels, growers can achieve faster growth cycles and more abundant harvests, increasing overall productivity in hydroponic systems.</li>
                 </ul>
             </div>
             <div className="spacer"></div>
