@@ -5,6 +5,7 @@ import login from '../images/user.svg';
 import signup from '../images/user-plus.svg';
 import mushroomChar from '../images/mushroom-char-2.png';
 import mushroomChar2 from '../images/mushroom-char-3.png';
+import mushroomGroup from '../images/mushroom-group.png';
 import menu from '../images/menu.svg';
 import { useCookies } from "react-cookie";
 import axios from "axios";
@@ -57,7 +58,10 @@ const LandingPage = () => {
                 </ul>
             </div>
             <div className="spacer"></div>
-            <div className="join-header"><h4>Join us</h4></div>
+            <div className="product-info-div">
+                <div className="product-info-title"><h4>Join Us..</h4></div>
+                <div className="landing-image"><img src={mushroomGroup}></img></div>
+            </div>
             <div className="landing-text">
                 <p>Explore the future of cultivation with Green Capz! Log in or sign up today!</p>
             </div>

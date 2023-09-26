@@ -200,9 +200,11 @@ span a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
-  width: 70vw;
+  width: 80vw;
   height: .25rem;
   background-color: #3a3b3a;
+  animation: pulse 2s infinite;
+  border-radius: 3px;
 }
 
 .home-page-header h5{
@@ -327,13 +329,14 @@ span a {
   font-size: 2.5rem;
 }
 .landing-text{
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Inter', sans-serif;
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
   margin-bottom: 2rem;
   display: flex;
+  font-weight: 300;
 }
 .product-info{
   font-family: 'Dosis', sans-serif;
@@ -343,22 +346,25 @@ span a {
   margin-top: 1rem;
   margin-bottom: 2rem;
   display: flex;
+  font-weight: 300;
 }
 
 .product-info li{
   margin-bottom: .5rem;
   list-style: none;
   font-size: 1rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .landing-intro{
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Inter', sans-serif;
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
   margin-bottom: 2rem;
   display: flex;
+  font-weight: 300;
 }
 
 .button-div{
