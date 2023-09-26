@@ -7,6 +7,7 @@ import mushroomChar from '../images/mushroom-char-2.png';
 import mushroomChar2 from '../images/mushroom-char-3.png';
 import mushroomGroup from '../images/mushroom-group.png';
 import menu from '../images/menu.svg';
+import monitor from '../images/monitor.svg';
 import { useCookies } from "react-cookie";
 import axios from "axios";
 
@@ -43,7 +44,7 @@ const LandingPage = () => {
                     your hydroponic experience, ensuring your plants thrive in the most 
                     efficient and environmentally conscious way possible.</p>
             </div>
-            <div className="spacer"></div>
+            <div className="spacer"><img src={monitor}></img></div>
             <div className="product-info-div">
                 <div className="product-info-title"><h4>Here to help..</h4></div>
                 <div className="landing-image"><img src={mushroomChar2}></img></div>
@@ -57,7 +58,7 @@ const LandingPage = () => {
                     <li><b>Increased Productivity:</b> By maintaining optimal nutrient levels, growers can achieve faster growth cycles and more abundant harvests, increasing overall productivity in hydroponic systems.</li>
                 </ul>
             </div>
-            <div className="spacer"></div>
+            <div className="spacer"><img src={monitor}></img></div>
             <div className="product-info-div">
                 <div className="product-info-title"><h4>Join Us..</h4></div>
                 <div className="landing-image"><img src={mushroomGroup}></img></div>
