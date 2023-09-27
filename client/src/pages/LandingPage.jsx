@@ -26,11 +26,17 @@ const LandingPage = () => {
 
     return(
         <div className="landing-page">
-          <div className="home-page-header">
+          <div className="navbar">
+            <nav>
             <img src={menu}></img>
+            </nav>
           </div>
           <div className="landing-title-div">
               <div className="landing-welcome"><h4>Welcome to..</h4></div>
+              <div className="spacer">
+                <div className="spacer-left"></div>
+                <div className="spacer-right"></div>
+              </div>
               <div className="landing-image"><img src={mushroomChar}></img></div>
               
           </div>
@@ -38,15 +44,19 @@ const LandingPage = () => {
            
             <div className="landing-intro">
                 <p>Your gateway to precision hydroponic cultivation! 
-                    At Green Capz, we specialize in monitoring sensor data for hydroponic 
+                    At <b>Green Capz</b>, we specialize in monitoring sensor data for hydroponic 
                     growers, empowering you to achieve optimal crop yields and sustainability. 
                     Our technology and insights combine to revolutionize 
                     your hydroponic experience, ensuring your plants thrive in the most 
                     efficient and environmentally conscious way possible.</p>
             </div>
-            <div className="spacer"><img src={monitor}></img></div>
+            
             <div className="product-info-div">
                 <div className="product-info-title"><h4>Here to help..</h4></div>
+                <div className="spacer">
+                <div className="spacer-left-2"></div>
+                <div className="spacer-right-2"></div>
+                </div>
                 <div className="landing-image"><img src={mushroomChar2}></img></div>
             </div>
             <div className="product-info-title-big"><h4>How?</h4></div>
@@ -58,14 +68,19 @@ const LandingPage = () => {
                     <li><b>Increased Productivity:</b> By maintaining optimal nutrient levels, growers can achieve faster growth cycles and more abundant harvests, increasing overall productivity in hydroponic systems.</li>
                 </ul>
             </div>
-            <div className="spacer"><img src={monitor}></img></div>
             <div className="product-info-div">
-                <div className="product-info-title"><h4>Join Us..</h4></div>
+                <div className="product-info-title"><h4>Join Us Now..</h4></div>
+                <div className="spacer">
+                <div className="spacer-left-3"></div>
+                <div className="spacer-right-3"></div>
+                </div>
                 <div className="landing-image"><img src={mushroomGroup}></img></div>
             </div>
-            <div className="landing-text">
-                <p>Explore the future of cultivation with Green Capz! Log in or sign up today!</p>
+            <div className="product-info-title-big"><h4>and Level Up</h4></div>
+            <div className="join-text">
+                <p>Let us help you level up your growing game and explore the future of cultivation with Green Capz! Log in or sign up today!</p>
             </div>
+            <div className="full-bar"></div>
             <div className="landing-buttons">
               <div onClick={loginButton} className="button-div">
                 <div className="button-img">
