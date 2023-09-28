@@ -266,11 +266,12 @@ span a {
 .full-bar{
   height: 4px;
   background-color: rgba(0, 227, 4, .75);
-  width: 70vw;
+  width: 50vw;
   animation: spacerPulse 2s infinite;
   border-radius: 1px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1rem;
 }
 .home-page-header h5{
   font-family: 'Dosis', sans-serif;
@@ -411,13 +412,14 @@ span a {
 }
 .join-text{
   font-family: 'Inter', sans-serif;
-  width: 80vw;
+  text-align: center;
+  width: 90vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
   margin-bottom: 2rem;
   display: flex;
-  font-weight: 400;
+  font-weight: 300;
   background-color: rgba(58, 59, 58, .5);
   padding: 1.5rem;
   border-bottom-left-radius: 35px;
@@ -477,10 +479,8 @@ span a {
   margin-left: auto;
   margin-right: auto;
   font-size: 1.75rem;
-  font-weight: bold;
   font-family: 'Bebas Neue', sans-serif;
   color: white;
-  letter-spacing: 1px;
 }
 
 .button-img{
