@@ -420,7 +420,7 @@ span a {
   margin-bottom: 2rem;
   display: flex;
   font-weight: 300;
-  background-color: rgba(58, 59, 58, .5);
+  background-color: #3C9671;
   padding: 1.5rem;
   border-bottom-left-radius: 35px;
   border-top-right-radius: 35px;
@@ -441,7 +441,7 @@ span a {
   list-style: none;
   font-size: 1rem;
   font-family: 'Inter', sans-serif;
-  background-color: rgba(58, 59, 58, .75);
+  background-color: #3C9671;
   padding: 1.5rem;
   border-bottom-left-radius: 35px;
   border-top-right-radius: 35px;
