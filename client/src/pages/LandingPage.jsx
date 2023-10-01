@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import greenMushroom from '../images/green-mushroom.png';
 import login from '../images/user.svg';
 import signup from '../images/user-plus.svg';
-import mushroomChar from '../images/mushroom-char-2.png';
+import mushroomChar from '../images/mushroom-char-1.png';
 import mushroomChar2 from '../images/mushroom-char-3.png';
 import mushroomGroup from '../images/mushroom-group.png';
 import menu from '../images/menu.svg';
