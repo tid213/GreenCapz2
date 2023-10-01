@@ -31,24 +31,33 @@ const LandingPage = () => {
             <img src={menu}></img>
             </nav>
           </div>
-          <div className="landing-title-div">
-              <div className="landing-welcome"><h4>Welcome to..</h4></div>
-              <div className="spacer">
-                <div className="spacer-left"></div>
-                <div className="spacer-right"></div>
-              </div>
-              <div className="landing-image"><img src={mushroomChar}></img></div>
-              
+          <div className="page-header">
+            <div className="page-header-left"><p>Green</p></div>
+            <div className="page-header-right"><p>Capz</p></div>
           </div>
-          <div className="landing-brand"><h4>Green Capz</h4></div>
+          <div className="landing-welcome"><h4>Welcome to..</h4></div>
+          <div className="landing-title-div">
+              <div className="landing-image">
+                <div className="spacer">
+                  <div className="spacer-left"></div>
+                  <div className="spacer-right"></div>
+                </div>
+                <img src={mushroomChar}></img>
+              </div>
+              <div className="landing-brand">
+                <h4>GREEN CAPZ</h4>
+                <p>Your gateway to precision hydroponic cultivation! </p>
+              </div>
+          </div>
+          
            
             <div className="landing-intro">
-                <p>Your gateway to precision hydroponic cultivation! 
+                <p>
                     At <b>Green Capz</b>, we specialize in monitoring sensor data for hydroponic 
-                    growers, empowering you to achieve optimal crop yields and sustainability. 
+                    growers, empowering you to achieve <b>optimal</b> crop yields and sustainability. 
                     Our technology and insights combine to revolutionize 
                     your hydroponic experience, ensuring your plants thrive in the most 
-                    efficient and environmentally conscious way possible.</p>
+                    <b> efficient</b> and environmentally conscious way possible.</p>
             </div>
             
             <div className="product-info-div">

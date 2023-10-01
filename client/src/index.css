@@ -222,7 +222,7 @@ span a {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  margin-left: 1rem;
+  margin-left: auto;
   margin-right: auto;
   margin-top: .5rem;
   margin-bottom: .5rem;
@@ -329,10 +329,24 @@ span a {
 .home_page span {
   color: #00e304;
 }
-
+.page-header{
+  height: 3rem;
+  background-color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #00e304;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.page-header-left{
+  color: #00e304;
+  margin-left: .5rem;
+}
+.page-header-right{
+  color: #000;
+}
 .landing-img img{
-  max-width: 50vw;
-  max-height: 15vh;
+  max-width: 40vw;
 
 }
 
@@ -353,16 +367,21 @@ span a {
 .landing-title-div{
   font-family: 'Dosis', sans-serif;
   width: 100vw;
+  height: 30vh;
   margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
 }
 .landing-image{
   display: flex;
+  flex-direction: column;
   align-content: center;
-  justify-content: center;
-  margin-top: 8vh;
+  width: 60vw;
 }
 .landing-image img{
-  max-height: 35vh;
+  max-height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product-info-div{
   font-family: 'Dosis', sans-serif;
@@ -370,8 +389,15 @@ span a {
   margin-top: 1vh;
 }
 .landing-welcome{
+  margin-top: 1rem;
   margin-left: .5rem;
+  margin-bottom: 2rem;
   font-size: 1.5rem;
+  font-family: 'Dosis', sans-serif;
+}
+.landing-intro b{
+  color: #00e304;
+  font-size: 1.25rem;
 }
 .product-info-title{
   margin-left: .5rem;
@@ -381,8 +407,13 @@ span a {
 .landing-brand{
   text-align: center;
   height: auto;
+  
+}
+.landing-brand h4{
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.5rem;
+  color: #00e304;
+  font-weight: bold;
 }
 .join-header{
   text-align: center;
@@ -448,6 +479,15 @@ span a {
 }
 
 .landing-intro{
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: white;
+  
+}
+.landing-intro p{
   font-family: 'Inter', sans-serif;
   width: 90vw;
   text-align: center;
@@ -455,10 +495,9 @@ span a {
   margin-right: auto;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background-color: rgba(58, 59, 58, .5);
-  border-bottom-left-radius: 35px;
-  border-top-right-radius: 35px;
+  color: #000;
 }
+
 
 .button-div{
   width: 35vw;
