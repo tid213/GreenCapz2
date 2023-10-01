@@ -213,7 +213,7 @@ span a {
 .navbar{
   position: fixed;
   right: .5rem;
-  top: 1rem;
+  top: .5rem;
 
 }
 
@@ -224,7 +224,6 @@ span a {
   align-items: baseline;
   margin-left: auto;
   margin-right: auto;
-  margin-top: .5rem;
   margin-bottom: .5rem;
 }
 .spacer-left{
@@ -367,19 +366,20 @@ span a {
 .landing-title-div{
   font-family: 'Dosis', sans-serif;
   width: 100vw;
-  height: 30vh;
+  height: 40vh;
   margin-top: 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .landing-image{
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 60vw;
+  width: 100vw;
+  margin-bottom: 2rem;
 }
 .landing-image img{
-  max-height: 15vh;
+  max-width: 40vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -391,7 +391,6 @@ span a {
 .landing-welcome{
   margin-top: 1rem;
   margin-left: .5rem;
-  margin-bottom: 2rem;
   font-size: 1.5rem;
   font-family: 'Dosis', sans-serif;
 }
