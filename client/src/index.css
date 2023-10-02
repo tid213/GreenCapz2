@@ -314,7 +314,7 @@ span a {
 
 .landing-page{
   width: 100vw;
-  background-color: #121212;
+  background-color: #182c25;
   color: white;
   display: flex;
   flex-direction: column;
@@ -339,7 +339,7 @@ span a {
   align-items: center;
 }
 .page-header-left{
-  color: #00e304;
+  color: #306844;
   margin-left: .5rem;
 }
 .page-header-right{
@@ -417,9 +417,12 @@ span a {
 }
 .landing-brand h4{
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.5rem;
-  color: #00e304;
-  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+}
+.landing-brand p{
+  color: white;
+  font-weight: 500;
 }
 .join-header{
   text-align: center;
@@ -432,7 +435,7 @@ span a {
   height: auto;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.5rem;
-  color: #00e304;
+  color: white;
 }
 .product-info-title-small{
   text-align: center;
