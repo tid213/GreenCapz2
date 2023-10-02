@@ -457,31 +457,47 @@ span a {
 }
 .product-info{
   font-family: 'Dosis', sans-serif;
-  width: 85vw;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
   margin-bottom: 2rem;
   display: flex;
-  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 2rem;
+}
+
+.product-info b{
+  color: #00e304;
 }
 
 .product-info li{
-  margin-bottom: .75rem;
+  margin-bottom: .5rem;
   list-style: none;
   font-size: 1rem;
   font-family: 'Inter', sans-serif;
-  background-color: #3a3b3a;
-  padding: 1.5rem;
+  color: black;
+  padding: 1rem;
   border-bottom-left-radius: 35px;
   border-top-right-radius: 35px;
+  width: 90vw;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.product-info-li-spacer{
+  height: 2px;
+  width: 40vw;
+  background-color: #656262;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .landing-intro{
-  height: 40vh;
+  height: 45vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100vw;
   background-color: white;
   
@@ -495,6 +511,9 @@ span a {
   margin-bottom: 2rem;
   padding: 1.5rem;
   color: #000;
+  line-height: 1.6;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 
