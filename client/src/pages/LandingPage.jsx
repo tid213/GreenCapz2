@@ -36,7 +36,7 @@ const LandingPage = () => {
             <div className="page-header-left"><p>Green</p></div>
             <div className="page-header-right"><p>Capz</p></div>
           </div>
-          <div className="landing-welcome"><h4>Welcome to..</h4></div>
+          <div className="landing-welcome"><h4>Welcome to</h4></div>
           <div className="landing-title-div">
               <div className="landing-image">
                 <div className="spacer">
@@ -60,7 +60,7 @@ const LandingPage = () => {
                     your hydroponic experience, ensuring your plants thrive in the most 
                     <b> efficient</b> and environmentally conscious way possible.</p>
             </div>
-            <div className="product-info-title"><h4>Here to help..</h4></div>
+            <div className="product-info-title"><h4>Here to help</h4></div>
             <div className="product-info-div">
                 <div className="spacer">
                 <div className="spacer-left-2"></div>
@@ -69,8 +69,7 @@ const LandingPage = () => {
                 <div className="landing-image"><img src={mushroomChar2}></img></div>
             </div>
             <div className="product-info-title-big"><h4>How?</h4></div>
-            <div className="product-info-title-small"><p>With our technology and knowledge we can provide many benefits to
-                many different types, and levels, of growers.</p></div>
+            <div className="product-info-title-small"><p>With our technology and knowledge we can provide..</p></div>
             <div className="product-info">
                 <ul>
                     <li><b>Optimize Plant Health:</b> Precise nutrient monitoring ensures that plants receive the ideal mix of nutrients, promoting robust growth, higher yields, and healthier crops.</li>
@@ -98,6 +97,8 @@ const LandingPage = () => {
                    Elevate your hydroponic journey, maximize efficiency, and unlock 
                    your garden's full potential with <b>Green Capz</b>. Join us today and grow smarter!</p>
             </div>
+            <div className="full-bar"></div> 
+            <div className="levelup-mushrooms"><img src={mushroomGroup}></img></div>
             <div className="landing-buttons">
               <div onClick={loginButton} className="button-div">
                 <div className="button-img">
@@ -116,8 +117,6 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="full-bar"></div> 
-            <div className="levelup-mushrooms"><img src={mushroomGroup}></img></div>
             <div className="footer"><p>Green Capz 2023</p></div>
         </div>
     )

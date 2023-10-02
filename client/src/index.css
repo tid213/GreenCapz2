@@ -364,7 +364,7 @@ span a {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-
+  margin-top: 2rem;
 }
 .landing-name{
   font-family: 'Bebas Neue', sans-serif;
@@ -372,10 +372,10 @@ span a {
 .landing-title-div{
   font-family: 'Dosis', sans-serif;
   width: 100vw;
-  height: 40vh;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  padding-bottom: 2rem;
 }
 .landing-image{
   display: flex;
@@ -421,7 +421,7 @@ span a {
   color: white;
 }
 .landing-brand p{
-  color: white;
+  color: lightgreen;
   font-weight: 500;
 }
 .join-header{
@@ -443,6 +443,7 @@ span a {
   width: 75vw;
   margin-left: auto;
   margin-right: auto;
+  color: lightgreen;
 }
 .landing-text{
   font-family: 'Inter', sans-serif;
