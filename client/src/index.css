@@ -271,6 +271,7 @@ span a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 .home-page-header h5{
   font-family: 'Dosis', sans-serif;
@@ -313,7 +314,7 @@ span a {
 
 .landing-page{
   width: 100vw;
-  background-color: black;
+  background-color: #121212;
   color: white;
   display: flex;
   flex-direction: column;
@@ -348,16 +349,21 @@ span a {
   max-width: 40vw;
 
 }
+.levelup-mushrooms {
+  margin-left: auto;
+  margin-right: auto;
+}
+.levelup-mushrooms img{
+ max-width: 50vw;
+}
 
 .landing-buttons{
   width: 80vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 10rem;
 
 }
 .landing-name{
@@ -386,7 +392,7 @@ span a {
 .product-info-div{
   font-family: 'Dosis', sans-serif;
   width: 100vw;
-  margin-top: 1vh;
+  margin-top: 2rem;
 }
 .landing-welcome{
   margin-top: 1rem;
@@ -402,6 +408,7 @@ span a {
   margin-left: .5rem;
   font-size: 1.5rem;
   font-family: 'Dosis', sans-serif;
+  padding-top: 1rem;
 }
 .landing-brand{
   text-align: center;
@@ -425,6 +432,14 @@ span a {
   height: auto;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.5rem;
+  color: #00e304;
+}
+.product-info-title-small{
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 .landing-text{
   font-family: 'Inter', sans-serif;
@@ -443,17 +458,22 @@ span a {
 .join-text{
   font-family: 'Inter', sans-serif;
   text-align: center;
-  width: 90vw;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
-  font-weight: 300;
-  background-color: #3a3b3a;
   padding: 1.5rem;
-  border-bottom-left-radius: 35px;
-  border-top-right-radius: 35px;
+  color: #000;
+  background-color: white;
+  line-height: 1.6;
+}
+.join-text b{
+  color: #00e304;
+}
+.join-text p {
+  width: 80vw;
 }
 .product-info{
   font-family: 'Dosis', sans-serif;
@@ -461,7 +481,7 @@ span a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,7 +509,7 @@ span a {
 
 .product-info-li-spacer{
   height: 2px;
-  width: 40vw;
+  width: 30vw;
   background-color: #656262;
   margin-left: auto;
   margin-right: auto;
@@ -862,6 +882,10 @@ span a {
   color: white;
 }
 
+.footer{
+  text-align: center;
+  padding-top: 3rem;
+}
 
 
 @media only screen and (max-width: 1200px){

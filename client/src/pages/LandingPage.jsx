@@ -5,6 +5,7 @@ import login from '../images/user.svg';
 import signup from '../images/user-plus.svg';
 import mushroomChar from '../images/mushroom-char-1.png';
 import mushroomChar2 from '../images/mushroom-char-3.png';
+import mushroomChar3 from '../images/mushroom-char-4.png';
 import mushroomGroup from '../images/mushroom-group.png';
 import menu from '../images/menu.svg';
 import monitor from '../images/monitor.svg';
@@ -59,9 +60,8 @@ const LandingPage = () => {
                     your hydroponic experience, ensuring your plants thrive in the most 
                     <b> efficient</b> and environmentally conscious way possible.</p>
             </div>
-            
+            <div className="product-info-title"><h4>Here to help..</h4></div>
             <div className="product-info-div">
-                <div className="product-info-title"><h4>Here to help..</h4></div>
                 <div className="spacer">
                 <div className="spacer-left-2"></div>
                 <div className="spacer-right-2"></div>
@@ -69,6 +69,8 @@ const LandingPage = () => {
                 <div className="landing-image"><img src={mushroomChar2}></img></div>
             </div>
             <div className="product-info-title-big"><h4>How?</h4></div>
+            <div className="product-info-title-small"><p>With our technology and knowledge we can provide many benefits to
+                many different types, and levels, of growers.</p></div>
             <div className="product-info">
                 <ul>
                     <li><b>Optimize Plant Health:</b> Precise nutrient monitoring ensures that plants receive the ideal mix of nutrients, promoting robust growth, higher yields, and healthier crops.</li>
@@ -82,22 +84,20 @@ const LandingPage = () => {
                     <li><b>Increased Productivity:</b> By maintaining optimal nutrient levels, growers can achieve faster growth cycles and more abundant harvests, increasing overall productivity in hydroponic systems.</li>
                 </ul>
             </div>
+            <div className="product-info-title"><h4>Join Us Now..</h4></div>
             <div className="product-info-div">
-                <div className="product-info-title"><h4>Join Us Now..</h4></div>
                 <div className="spacer">
                 <div className="spacer-left-3"></div>
                 <div className="spacer-right-3"></div>
                 </div>
-                <div className="landing-image"><img src={mushroomGroup}></img></div>
+                <div className="landing-image"><img src={mushroomChar3}></img></div>
             </div>
             <div className="product-info-title-big"><h4>and Level Up</h4></div>
-            <div className="full-bar"></div>
             <div className="join-text">
                 <p>Join <b>Green Capz</b> to level up your hydroponic growing experience! 
                    Elevate your hydroponic journey, maximize efficiency, and unlock 
                    your garden's full potential with <b>Green Capz</b>. Join us today and grow smarter!</p>
             </div>
-            
             <div className="landing-buttons">
               <div onClick={loginButton} className="button-div">
                 <div className="button-img">
@@ -116,7 +116,9 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            
+            <div className="full-bar"></div> 
+            <div className="levelup-mushrooms"><img src={mushroomGroup}></img></div>
+            <div className="footer"><p>Green Capz 2023</p></div>
         </div>
     )
 
