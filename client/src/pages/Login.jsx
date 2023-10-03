@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import homeImg from '../images/home.svg';
+import NavBar from '../components/NavBar.jsx';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -67,6 +68,7 @@ const Login = () => {
 
   return (
     <div className="form-page">
+      <NavBar />
       <div className="form-container">
       <h2>Account Login</h2>
       <form onSubmit={handleSubmit}>

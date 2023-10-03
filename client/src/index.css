@@ -210,11 +210,31 @@ span a {
   align-items: center;  
 }
 
-.navbar{
+/* Navbar styles*/
+
+.navbar img{
   position: fixed;
   right: .5rem;
   top: .5rem;
+}
+.nav-options{
+  position: fixed;
+  right: .5rem;
+  top: 2.5rem;
+  width: 50vw;
+  background-color: #455b55;
+  color: white;
+  border-radius: 10px;
+  /*box-shadow: 3px 2px 3px 1px #5abe7d;*/
+}
 
+.nav-options ul{
+  list-style: none;
+  text-align: center;
+}
+
+.nav-options li{
+  padding: 1rem;
 }
 
 .spacer{
@@ -331,7 +351,7 @@ span a {
 }
 .page-header{
   height: 3rem;
-  background-color: white;
+  background-color: #dcfad9;
   font-family: 'Bebas Neue', sans-serif;
   color: #00e304;
   font-size: 2rem;
@@ -401,7 +421,7 @@ span a {
   font-family: 'Dosis', sans-serif;
 }
 .landing-intro b{
-  color: #00e304;
+  color: #306844;
   font-size: 1.25rem;
 }
 .product-info-title{
@@ -474,7 +494,7 @@ span a {
   line-height: 1.6;
 }
 .join-text b{
-  color: #00e304;
+  color: #306844;
 }
 .join-text p {
   width: 80vw;
@@ -494,7 +514,7 @@ span a {
 }
 
 .product-info b{
-  color: #00e304;
+  color: #306844;
 }
 
 .product-info li{
@@ -566,13 +586,14 @@ span a {
 }
 
 .button-img{
-  background-color: black;
+  background-color: #455b55;
   padding: .5rem;
   height: 100%;
+  width: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid white;
+  border: 2px solid #182c25;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }

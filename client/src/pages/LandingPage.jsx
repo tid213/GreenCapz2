@@ -8,9 +8,7 @@ import mushroomChar2 from '../images/mushroom-char-3.png';
 import mushroomChar3 from '../images/mushroom-char-4.png';
 import mushroomGroup from '../images/mushroom-group.png';
 import menu from '../images/menu.svg';
-import monitor from '../images/monitor.svg';
-import { useCookies } from "react-cookie";
-import axios from "axios";
+import NavBar from '../components/NavBar.jsx';
 
 const LandingPage = () => {
 
@@ -27,11 +25,7 @@ const LandingPage = () => {
 
     return(
         <div className="landing-page">
-          <div className="navbar">
-            <nav>
-            <img src={menu}></img>
-            </nav>
-          </div>
+          <NavBar />
           <div className="page-header">
             <div className="page-header-left"><p>Green</p></div>
             <div className="page-header-right"><p>Capz</p></div>
