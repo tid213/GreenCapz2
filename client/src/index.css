@@ -400,6 +400,7 @@ span a {
 .landing-title-div{
   font-family: 'Dosis', sans-serif;
   width: 100vw;
+  height: 40vh;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;

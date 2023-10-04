@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import greenMushroom from '../images/green-mushroom.png';
 import login from '../images/user.svg';
 import signup from '../images/user-plus.svg';
 import mushroomChar from '../images/mushroom-char-1.png';
 import mushroomChar2 from '../images/mushroom-char-3.png';
 import mushroomChar3 from '../images/mushroom-char-4.png';
 import mushroomGroup from '../images/mushroom-group.png';
-import menu from '../images/menu.svg';
 import NavBar from '../components/NavBar.jsx';
+import { motion } from "framer-motion";
 
 const LandingPage = () => {
 
@@ -30,17 +29,29 @@ const LandingPage = () => {
             <div className="page-header-left"><p>Green</p></div>
             <div className="page-header-right"><p>Capz</p></div>
           </div>
-          <div className="landing-welcome"><h4>Welcome to</h4></div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.75 }}>
+            <div className="landing-welcome"><h4>Welcome to</h4></div>
+          </motion.div>
+          
           <div className="landing-title-div">
               <div className="landing-image">
                 <div className="spacer">
                   <div className="spacer-left"></div>
                   <div className="spacer-right"></div>
                 </div>
-                <img src={mushroomChar}></img>
+                    <img src={mushroomChar}></img>
               </div>
               <div className="landing-brand">
-                <h4>GREEN CAPZ</h4>
+                <motion.div
+                    initial={{ opacity: 0.5, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 1 }}>
+                    <h4>GREEN CAPZ</h4>
+                </motion.div>
+                
                 <p>Your gateway to precision hydroponic cultivation! </p>
               </div>
           </div>
