@@ -68,10 +68,14 @@ const Login = () => {
 
   return (
     <div className="form-page">
+      <div className="page-header">
+            <div className="page-header-left"><p>Green</p></div>
+            <div className="page-header-right"><p>Capz</p></div>
+      </div>
       <NavBar />
       <div className="form-container">
-      <h2>Account Login</h2>
-      <form onSubmit={handleSubmit}>
+        <h2>Account Login</h2>
+        <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label>
           <input
@@ -98,16 +102,6 @@ const Login = () => {
         </span>
       </form>
      </div>
-      <div className="home-button">
-       <div onClick={homeButton} className="button-div">
-        <div className="button-img">
-          <img src={homeImg}></img>
-        </div>
-        <div className="button-text">
-          <p>Home</p>
-        </div>
-       </div>
-      </div>
     </div>
   );
 };
