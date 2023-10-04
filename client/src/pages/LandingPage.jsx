@@ -34,9 +34,7 @@ const LandingPage = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.75 }}>
             <div className="landing-welcome"><h4>Welcome to</h4></div>
-          </motion.div>
-          
-          <div className="landing-title-div">
+            <div className="landing-title-div">
               <div className="landing-image">
                 <div className="spacer">
                   <div className="spacer-left"></div>
@@ -45,19 +43,14 @@ const LandingPage = () => {
                     <img src={mushroomChar}></img>
               </div>
               <div className="landing-brand">
-                <motion.div
-                    initial={{ opacity: 0.5, scale: 0.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 1 }}>
                     <h4>GREEN CAPZ</h4>
-                </motion.div>
                 
                 <p>Your gateway to precision hydroponic cultivation! </p>
               </div>
           </div>
+          </motion.div>
           
-           
-            <div className="landing-intro">
+          <div className="landing-intro">
                 <p>
                     At <b>Green Capz</b>, we specialize in monitoring sensor data for hydroponic 
                     growers, empowering you to achieve <b>optimal</b> crop yields and sustainability. 
