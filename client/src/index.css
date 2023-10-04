@@ -411,6 +411,7 @@ span a {
   flex-direction: column;
   align-content: center;
   width: 100vw;
+  height: auto;
   margin-bottom: 2rem;
 }
 .landing-image img{

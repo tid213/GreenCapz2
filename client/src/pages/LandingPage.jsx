@@ -30,9 +30,9 @@ const LandingPage = () => {
             <div className="page-header-right"><p>Capz</p></div>
           </div>
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.75 }}>
+            transition={{ duration: 1 }}>
             <div className="landing-welcome"><h4>Welcome to</h4></div>
             <div className="landing-title-div">
               <div className="landing-image">
