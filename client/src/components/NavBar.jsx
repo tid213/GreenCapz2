@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import menu from '../images/menu.svg';
-
+import closeX from '../images/x.svg';
+import { motion } from "framer-motion";
 
 const NavBar = () => {
 
@@ -31,15 +32,26 @@ const NavBar = () => {
             <div>
               <div className="navbar" onClick={navExpand}>
                 <nav>
-                  <img src={menu}></img>
-                  <div className="nav-options">
+                  <img src={closeX}></img>
+                  <motion.div
+                  initial={{ opacity: 0, scale: 1 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5}}>
+                    <div className="nav-options">
                     <ul>
                         <li onClick={() => navigate('/')}>Home</li>
+                        <div className="nav-list-spacer"></div>
                         <li onClick={() => navigate('/signup')}>Sign up</li>
+                        <div className="nav-list-spacer"></div>
                         <li>Tech Specs</li>
-                        <li onClick={() => navigate('/login')}>Log in</li>
+                        <div className="nav-list-spacer"></div>
+                        <li>Contact</li>
+                        <div className="nav-list-spacer"></div>
+                        <li onClick={() => navigate('/login')}><b>Log in</b></li>
                     </ul>
                   </div>
+                  </motion.div>
+                  
                 </nav>
               </div>
             </div>
