@@ -34,9 +34,9 @@ const NavBar = () => {
                 <nav>
                   <img src={closeX}></img>
                   <motion.div
-                  initial={{ opacity: 0, scale: 1,  x: "50vw" }}
-                  animate={{ opacity: 1, scale: 1, width: "50vw",x: "50vw" }}
-                  transition={{ duration: 0.75, origin: 1}}>
+                  initial={{ opacity: 0, scale: 1 }}
+                  animate={{ opacity: 1, scale: 1}}
+                  transition={{ duration: 0.5, origin: 1}}>
                     <div className="nav-options">
                     <ul>
                         <li onClick={() => navigate('/')}>Home</li>
