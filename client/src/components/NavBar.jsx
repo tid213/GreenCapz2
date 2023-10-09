@@ -43,7 +43,7 @@ const NavBar = () => {
                         <div className="nav-list-spacer"></div>
                         <li onClick={() => navigate('/signup')}>Sign up</li>
                         <div className="nav-list-spacer"></div>
-                        <li>Tech Specs</li>
+                        <li onClick={() => navigate('/techspecs')}>Tech Specs</li>
                         <div className="nav-list-spacer"></div>
                         <li>Contact</li>
                         <div className="nav-list-spacer"></div>

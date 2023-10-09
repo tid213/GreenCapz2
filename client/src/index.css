@@ -85,7 +85,7 @@
 }
 
 label {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
 }
 
@@ -119,12 +119,13 @@ body {
   max-width: 400px;
   height: auto;
   margin-top: 8rem;
+  border: 3px solid #182c25;
 }
 
 .form-container > h2 {
   margin-block: 1rem;
   padding-block: 0.6rem;
-  color: lightgreen;
+  color: white;
   font-family: 'Dosis', sans-serif;
   text-align: center;
 }
