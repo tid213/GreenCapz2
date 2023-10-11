@@ -33,10 +33,7 @@ const NavBar = () => {
               <div className="navbar" onClick={navExpand}>
                 <nav>
                   <img src={closeX}></img>
-                  <motion.div
-                  initial={{ opacity: 0, scale: 1 }}
-                  animate={{ opacity: 1, scale: 1}}
-                  transition={{ duration: 0.5, origin: 1}}>
+                  
                     <div className="nav-options">
                     <ul>
                         <li onClick={() => navigate('/')}>Home</li>
@@ -50,8 +47,6 @@ const NavBar = () => {
                         <li onClick={() => navigate('/login')}><b>Log in</b></li>
                     </ul>
                   </div>
-                  </motion.div>
-                  
                 </nav>
               </div>
             </div>
