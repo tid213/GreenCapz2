@@ -420,8 +420,6 @@ span a {
 .landing-title-div{
   font-family: 'Dosis', sans-serif;
   width: 100vw;
-  height: 45vh;
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
@@ -432,10 +430,9 @@ span a {
   align-content: center;
   width: 100vw;
   height: auto;
-  margin-bottom: 2rem;
 }
 .landing-image img{
-  max-width: 40vw;
+  max-width: 35vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -462,7 +459,6 @@ span a {
 }
 .landing-brand{
   text-align: center;
-  height: auto;
   
 }
 .landing-brand h4{

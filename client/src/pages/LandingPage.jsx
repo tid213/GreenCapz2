@@ -36,6 +36,10 @@ const LandingPage = () => {
             <div className="landing-welcome"><h4>Welcome to</h4></div>
             <div className="landing-title-div">
               <div className="landing-image">
+                <div className="spacer">
+                  <div className="spacer-left"></div>
+                  <div className="spacer-right"></div>
+                </div>
                  <img src={mushroomChar}></img>
               </div>
               <div className="landing-brand">
