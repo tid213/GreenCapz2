@@ -378,7 +378,7 @@ span a {
 }
 .page-header{
   height: 3rem;
-  background-color: #182c25;
+  background-color: #121212;
   font-family: 'Bebas Neue', sans-serif;
   color: #00e304;
   font-size: 2rem;
@@ -944,9 +944,13 @@ span a {
 
 /* Tech Specs Styles */
 .tech-specs-intro{
-  background-color: #2c4c3b;
+  background-color: #182c25;
   color: white;
   padding-top: 2rem;
+}
+.tech-specs-intro h4{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
 }
 .tech-specs-intro-text, .tech-specs-arduino-text, .tech-specs-rp-text,
 .ts-db-text, .ts-sensor-list{
@@ -967,8 +971,9 @@ span a {
 }
 .tech-specs-arduino{
   padding-top: 2rem;
-  background-color: #182c25;
-  color: white;
+  background-color: white;
+  color: #182c25;
+  font-weight: 500;
 }
 .tech-specs-arduino h4{
   font-family: 'Bebas Neue', sans-serif;
@@ -999,7 +1004,7 @@ span a {
 .rp-img{
   float: left;
 }
-.ts-rp-title, .ts-sensors-title{
+.ts-rp-title, .ts-sensors-title, .ts-intro-title{
   display: flex;
   justify-content: flex-end;
   margin-right: 1rem;

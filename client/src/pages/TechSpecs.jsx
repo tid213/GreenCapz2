@@ -15,6 +15,7 @@ const TechSpecs = () => {
         </div>
         <div className="tech-specs-divs">
             <div className="tech-specs-intro">
+                <div className='ts-intro-title'><h4>Tech Specs</h4></div>
                 <div className='ts-intro-img'><img src={mushroomChar5}></img></div>
                 <div className='tech-specs-intro-text'>
                     <p>Green Capz is a powerful web application revolutionizing 
