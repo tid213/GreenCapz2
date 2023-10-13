@@ -7,7 +7,7 @@ import thermometer from '../images/thermometer.png';
 import humidity from '../images/humidity.png';
 import greenMushroom from '../images/green-mushroom.png';
 import calendar from '../images/calendar.svg';
-import NavBar from '../components/NavBar.jsx';
+
 
 
 const Dashboard = (username) => {
@@ -24,6 +24,7 @@ const Dashboard = (username) => {
     navigate("/addreading");
   };
 
+
   const getTime = () => {
     let event = Date.now();
     let formatedTime = new Date(event).toLocaleString();
@@ -36,7 +37,7 @@ const Dashboard = (username) => {
             <div className="page-header-left"><p>Green</p></div>
             <div className="page-header-right"><p>Capz</p></div>
         </div>
-        <NavBar />
+        
         <div className="live-header"><p>Live Readings</p></div>
           <div className="live-readings">
                <div className="tent-reading-div">

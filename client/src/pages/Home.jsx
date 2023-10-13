@@ -5,6 +5,7 @@ import axios from "axios";
 import Readings from '../pages/Readings';
 import LandingPage from '../pages/LandingPage';
 import Dashboard from '../pages/Dashboard';
+import UserNavBar from '../components/UserNavBar.jsx';
 import thermometer from '../images/thermometer.png';
 import humidity from '../images/humidity.png';
 import greenMushroom from '../images/green-mushroom.png';
@@ -36,6 +37,7 @@ const Home = () => {
     };
     verifyCookie();
   }, [cookies, navigate, removeCookie]);
+  
   const Logout = () => {
     removeCookie("token");
     setLoggedIn(false);
@@ -43,7 +45,11 @@ const Home = () => {
 
   if (loggedIn){
     return (
+      <>
+      <UserNavBar logout={Logout}/>
       <Dashboard username={username}/>
+      </>
+      
     )
   } else{
     return(<LandingPage />)
