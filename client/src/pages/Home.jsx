@@ -36,7 +36,9 @@ const Home = () => {
         : setLoggedIn(false);
     };
     verifyCookie();
-  }, [cookies, navigate, removeCookie]);
+
+  }, [cookies, navigate, removeCookie, loggedIn]);
+
   
   const Logout = () => {
     removeCookie("token");

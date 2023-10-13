@@ -4,8 +4,10 @@ import mushroomChar6 from '../images/mushroom-char-6.png';
 import arduino from '../images/arduino.png';
 import raspberryPi from '../images/raspberry-pi.png';
 import mongoDB from '../images/mongodb.png';
+import UserNavBar from '../components/UserNavBar.jsx';
 
 const TechSpecs = () => {
+
     return(
       <div className="tech-specs-page">
         <NavBar />

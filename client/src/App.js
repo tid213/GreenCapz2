@@ -1,5 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Login, Signup, AddReading } from "./pages";
+import React, { useState, useEffect } from "react";
+import { useCookies } from "react-cookie";
 import Home from "./pages/Home";
 import TechSpecs from "./pages/TechSpecs"; 
 

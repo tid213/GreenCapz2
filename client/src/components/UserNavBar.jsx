@@ -42,7 +42,7 @@ const UserNavBar = ({logout}) => {
                   
                     <div className="nav-options">
                     <ul>
-                        <li onClick={() => navigate('/techspecs')}>Tech Specs</li>
+                        <li onClick={() => navigate('/addreading')}>Add Reading</li>
                         <div className="nav-list-spacer"></div>
                         <li>Contact</li>
                         <div className="nav-list-spacer"></div>
