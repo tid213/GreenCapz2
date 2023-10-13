@@ -16,7 +16,7 @@ const Home = () => {
   const navigate = useNavigate();
   const [cookies, removeCookie] = useCookies([]);
   const [username, setUsername] = useState("");
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(null);
   const [navExpand, setNavExpand] = useState(false);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ const Home = () => {
     setLoggedIn(false);
   };
 
-  if (loggedIn){
+  if (loggedIn === true){
     return (
       <>
       <UserNavBar logout={Logout}/>
@@ -53,8 +53,12 @@ const Home = () => {
       </>
       
     )
-  } else{
+  } else if (loggedIn === false){
     return(<LandingPage />)
+  } else{
+    return(
+      <div className="loading-div"></div>
+    )
   }
   
 };
