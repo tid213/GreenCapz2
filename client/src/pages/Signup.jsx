@@ -74,7 +74,7 @@ const Signup = () => {
       </div>
       <NavBar />
     <div className="form-container">
-      <h2>Account Signup</h2>
+      <h2>Sign up</h2>
       <div className="signup-error">
         <p>{errorMessage}</p>
       </div>
@@ -111,7 +111,7 @@ const Signup = () => {
         </div>
         <button type="submit">Submit</button>
         <span>
-          Already have an account? <Link to={"/login"}>Login</Link>
+          Already have an account? <Link to={"/login"}>Log in</Link>
         </span>
       </form>
     </div>

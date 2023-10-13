@@ -74,7 +74,7 @@ const Login = () => {
       </div>
       <NavBar />
       <div className="form-container">
-        <h2>Account Login</h2>
+        <h2>Log in</h2>
         <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label>
@@ -98,7 +98,7 @@ const Login = () => {
         </div>
         <button type="submit">Submit</button>
         <span>
-          Don't have an account? <Link to={"/signup"}>Signup</Link>
+          Don't have an account? <Link to={"/signup"}>Sign up</Link>
         </span>
       </form>
      </div>

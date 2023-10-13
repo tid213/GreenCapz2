@@ -12,7 +12,6 @@ import {
 
 
 const Readings = (username) => {
-
     const [userReadings, setUserReadings] = useState({});
     const [tentTemps, setTentTemps] = useState({});
     const [tentHumidity, setTentHumidity] = useState({});
@@ -39,7 +38,7 @@ const Readings = (username) => {
         }
 
         getUserData();
-    }, [chartLength]);
+    });
 
 
     const getNoteTime = (utcDate) => {
@@ -171,7 +170,7 @@ const Readings = (username) => {
 
 
     return(
-        <div>
+        <div className="readings-div">
           <div className="past-data-title"><p>Past Data</p></div>
           {changeToggle()}
           <div className="toggle-show"><p>Showing data for {chartLength} days</p></div>
