@@ -9,7 +9,7 @@ import {
     Tooltip,
     ResponsiveContainer
   } from "recharts";
-
+import calendar from '../images/calendar.svg'
 
 const Readings = (username) => {
     const [userReadings, setUserReadings] = useState({});
@@ -171,7 +171,10 @@ const Readings = (username) => {
 
     return(
         <div className="readings-div">
-          <div className="past-data-title"><p>Past Data</p></div>
+          <div className="past-data-title">
+            <img src={calendar}></img>
+            <p>Past Data</p>
+          </div>
           {changeToggle()}
           <div className="toggle-show"><p>Showing data for {chartLength} days</p></div>
           <div className="readingsContainer">
@@ -192,7 +195,7 @@ const Readings = (username) => {
                 <XAxis dataKey="createdAt" tick={false}/>
                 <YAxis tick={{ fill: 'white' }} />
                 <Tooltip content={<CustomTooltip />} />
-                <Area type="monotone" dataKey="sensorReading" stroke="#00e304" strokeWidth="3" fillOpacity={0} fill="#000000" />
+                <Area type="monotone" dataKey="sensorReading" stroke="#90EE90" strokeWidth="3" fillOpacity={0} fill="#000000" />
               </AreaChart>
               </ResponsiveContainer>
             </div>
@@ -215,12 +218,15 @@ const Readings = (username) => {
                     bottom: 5
                 }}
             >
-                <XAxis dataKey="createdAt" hide="true"/>
+                <XAxis dataKey="createdAt" tick={false}/>
                 <YAxis tick={{ fill: 'white' }} />
                 <Tooltip content={<CustomTooltipHumidity />} />
-                <Area type="monotone" dataKey="sensorReading" stroke="#00e304" strokeWidth="3" fillOpacity={0} fill="#000000" />
+                <Area type="monotone" dataKey="sensorReading" stroke="#90EE90" strokeWidth="3" fillOpacity={0} fill="#000000" />
               </AreaChart>
               </ResponsiveContainer>
+            </div>
+            <div className="reading-chart-timestamp">
+              <p>Last reading taken: {getTime()}</p>
             </div>
           </div>
           <div className="readingsContainer water-div-glow">
@@ -238,12 +244,15 @@ const Readings = (username) => {
                     bottom: 5
                 }}
             >
-                <XAxis dataKey="createdAt" hide="true"/>
+                <XAxis dataKey="createdAt" tick={false}/>
                 <YAxis tick={{ fill: 'white' }} />
                 <Tooltip content={<CustomTooltip />} />
                 <Area type="monotone" dataKey="sensorReading" stroke="#04c7c7" strokeWidth="4" fillOpacity={0} fill="#000000" />
               </AreaChart>
               </ResponsiveContainer>
+            </div>
+            <div className="reading-chart-timestamp">
+              <p>Last reading taken: {getTime()}</p>
             </div>
           </div>
           <div className="readingsContainer water-div-glow">
@@ -261,12 +270,15 @@ const Readings = (username) => {
                     bottom: 5
                 }}
             >
-                <XAxis dataKey="createdAt" hide="true"/>
+                <XAxis dataKey="createdAt" tick={false}/>
                 <YAxis tick={{ fill: 'white' }} />
                 <Tooltip content={<CustomTooltipPH />} />
                 <Area type="monotone" dataKey="sensorReading" stroke="#04c7c7" strokeWidth="4" fillOpacity={0} fill="#000000" />
               </AreaChart>
               </ResponsiveContainer>
+            </div>
+            <div className="reading-chart-timestamp">
+              <p>Last reading taken: {getTime()}</p>
             </div>
           </div>
           <div className="readingsContainer water-div-glow">
@@ -284,12 +296,15 @@ const Readings = (username) => {
                     bottom: 5
                 }}
             >
-                <XAxis dataKey="createdAt" hide="true"/>
+                <XAxis dataKey="createdAt" tick={false}/>
                 <YAxis tick={{ fill: 'white' }} />
                 <Tooltip content={<CustomTooltipPPM />} />
                 <Area type="monotone" dataKey="sensorReading" stroke="#04c7c7" strokeWidth="4" fillOpacity={0} fill="#000000" />
               </AreaChart>
               </ResponsiveContainer>
+            </div>
+            <div className="reading-chart-timestamp">
+              <p>Last reading taken: {getTime()}</p>
             </div>
           </div>
         </div>

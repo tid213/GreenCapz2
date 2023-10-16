@@ -37,8 +37,8 @@ const Dashboard = (username) => {
             <div className="page-header-left"><p>Green</p></div>
             <div className="page-header-right"><p>Capz</p></div>
         </div>
-        
-        <div className="live-header"><p>Live Readings</p></div>
+        <div className="dashboard-live">
+          <div className="dashboard-live-img"></div>
           <div className="live-readings">
                <div className="tent-reading-div">
                 <div className="tent-reading-img">
@@ -72,6 +72,7 @@ const Dashboard = (username) => {
                 <p>604</p>
                 </div>
             </div>
+           </div>
           </div>
           <div className="readings-time">
             <p>Last update: {getTime()}</p>
