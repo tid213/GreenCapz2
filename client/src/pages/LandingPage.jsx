@@ -52,17 +52,21 @@ const LandingPage = () => {
                     your hydroponic experience, ensuring your plants thrive in the most 
                     <b> efficient</b> and environmentally conscious way possible.</p>
             </div>
-            <div className="product-info-title"><h4>Here to help</h4></div>
-            <div className="product-info-div">
+            <div className="product-info-header"><h4>Here to help</h4></div>
+            <div className="info-div-header">
+             <div className="product-info-div">
                 <div className="spacer">
                 <div className="spacer-left-2"></div>
                 <div className="spacer-right-2"></div>
                 </div>
                 <div className="landing-image"><img src={mushroomChar2}></img></div>
-            </div>
-            <div className="product-info-title-big"><h4>How?</h4></div>
-            <div className="product-info-title-small"><p>With our technology and knowledge we can provide..</p></div>
-            <div className="product-info">
+             </div>
+             <div className="product-info-title">
+              <h4>How?</h4>
+              <p>With our technology and knowledge we can provide..</p>
+             </div>
+             </div>
+             <div className="product-info">
                 <ul>
                     <li><b>Optimize Plant Health:</b> Precise nutrient monitoring ensures that plants receive the ideal mix of nutrients, promoting robust growth, higher yields, and healthier crops.</li>
                     <div className="product-info-li-spacer"></div>

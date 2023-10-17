@@ -570,7 +570,12 @@ span a {
   font-family: 'Dosis', sans-serif;
   padding-top: 1rem;
 }
-
+.product-info-header{
+  margin-left: .5rem;
+  font-size: 1.5rem;
+  font-family: 'Dosis', sans-serif;
+  padding-top: 1rem;
+}
 
 .join-header{
   text-align: center;
@@ -578,14 +583,14 @@ span a {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.5rem;
 }
-.product-info-title-big{
+.product-info-title h4{
   text-align: center;
   height: auto;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 3rem;
   color: lightgreen;
 }
-.product-info-title-small{
+.product-info-title p{
   text-align: center;
   font-family: 'Dosis', sans-serif;
   width: 75vw;
@@ -1128,9 +1133,64 @@ span a {
 .ts-sensors-img{
   float: left;
 }
-@media only screen and (max-width: 1200px){
-  .home_page{
+@media (min-width: 1025px){
+  .landing-title-div{
+    flex-direction: row-reverse;
+    height: 400px;
+    justify-content: space-between;
+  }
+  .info-div-header{
+    flex-direction: row-reverse;
+    height: 400px;
+    justify-content: space-between;
+  }
+  .landing-image{
+    height: 40vh;
+    margin-right: 4rem;
+  }
+  .landing-image img{
+    max-height: 40vh;
+  }
+  .landing-brand, .product-info-title{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landing-brand h4, .product-info-title h4{
+    font-size: 8rem;
+  }
+  .landing-brand p{
+    font-size: 2rem;
+  }
+  .spacer{
+    margin-top: 2rem;
+    max-width: 20vw;
+  }
+  .landing-intro{
+    padding: 4rem;
+  }
+  .landing-intro p, .product-info-title p{
     font-size: 1.5rem;
   }
-  
+  .landing-intro b{
+    font-size: 1.5rem;
+  }
+  .info-div-header{
+    display: flex;
+  }
+  .product-info-li-spacer{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .product-info ul{
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2;
+  }
+  .product-info li{
+    width: 75vw;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
 }
