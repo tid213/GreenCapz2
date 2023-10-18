@@ -53,6 +53,8 @@ const LandingPage = () => {
                     <b> efficient</b> and environmentally conscious way possible.</p>
             </div>
             <div className="product-info-header"><h4>Here to help</h4></div>
+            <div className="product-info-container">
+            
             <div className="info-div-header">
              <div className="product-info-div">
                 <div className="spacer">
@@ -79,40 +81,53 @@ const LandingPage = () => {
                     <li><b>Increased Productivity:</b> By maintaining optimal nutrient levels, growers can achieve faster growth cycles and more abundant harvests, increasing overall productivity in hydroponic systems.</li>
                 </ul>
             </div>
-            <div className="product-info-title"><h4>Join Us Now..</h4></div>
-            <div className="product-info-div">
+            </div>
+            <div className="join-container">
+              <div className="join-title-div">
+               <div className="join-header"><h4>Join Us Now..</h4></div>
+               <div className="join-div-img">
                 <div className="spacer">
                 <div className="spacer-left-3"></div>
                 <div className="spacer-right-3"></div>
                 </div>
-                <div className="landing-image"><img src={mushroomChar3}></img></div>
-            </div>
-            <div className="product-info-title-big"><h4>and Level Up</h4></div>
-            <div className="join-text">
+                <div className="join-img"><img src={mushroomChar3}></img></div>
+               </div>
+                <div className="join-lvl-up"><h4>and Level Up</h4></div>
+              </div>
+             <div className="join-text">
                 <p>Join <b>Green Capz</b> to level up your hydroponic growing experience! 
                    Elevate your hydroponic journey, maximize efficiency, and unlock 
                    your garden's full potential with <b>Green Capz</b>. Join us today and grow smarter!</p>
-            </div>
-            <div className="full-bar"></div> 
-            <div className="levelup-mushrooms"><img src={mushroomGroup}></img></div>
-            <div className="landing-buttons">
-              <div onClick={loginButton} className="button-div">
+               <div className="desktop-buttons">
+                <div className="dt-signup"><p>Sign up</p></div>
+                <div className="dt-signin"><p>Sign in</p></div>
+               </div>
+             </div>
+             </div>
+             <div className="join-now">
+              <div className="join-now-img">
+              <div className="full-bar"></div> 
+              <div className="levelup-mushrooms"><img src={mushroomGroup}></img></div>
+              </div>
+              <div className="landing-buttons">
+               <div onClick={loginButton} className="button-div">
                 <div className="button-img">
                 <img src={login}></img>
                 </div>
                 <div className="button-text">
                 <p>Log in</p>
                 </div>
-              </div>
-              <div onClick={signupButton} className="button-div">
+               </div>
+               <div onClick={signupButton} className="button-div">
                 <div className="button-img">
                 <img src={signup}></img>
                 </div>
                 <div className="button-text">
                 <p>Sign up</p>
                 </div>
+               </div>
               </div>
-            </div>
+             </div>
             <div className="footer"><p>Green Capz 2023</p></div>
         </div>
     )
