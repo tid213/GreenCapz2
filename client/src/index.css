@@ -577,6 +577,32 @@ span a {
   font-family: 'Dosis', sans-serif;
   padding-top: 1rem;
 }
+.join-buttons{
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.dt-signup{
+  width: 33vw;
+  height: 3rem;
+  background-color: #2c4c3b;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dt-signin{
+  width: 33vw;
+  height: 3rem;
+  background-color: #2c4c3b;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .join-img{
   display: flex;
   flex-direction: column;
@@ -600,10 +626,18 @@ span a {
   margin-top: 2rem;
 }
 .join-header{
-  text-align: center;
+  margin-left: 1rem;
   height: auto;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.5rem;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2rem;
+}
+.join-now{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  padding-bottom: 2rem;
 }
 .product-info-title h4{
   text-align: center;
@@ -628,8 +662,8 @@ span a {
   width: 100vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   padding: 1.5rem;
   color: #000;
@@ -643,7 +677,11 @@ span a {
   width: 80vw;
 }
 .join-lvl-up{
-  font-family: 'Dosis', sans-serif;
+  text-align: center;
+    height: auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: lightgreen;
 }
 .product-info{
   font-family: 'Dosis', sans-serif;
@@ -1050,7 +1088,6 @@ span a {
 
 .footer{
   text-align: center;
-  padding-top: 3rem;
 }
 
 /* Tech Specs Styles */

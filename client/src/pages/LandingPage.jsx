@@ -109,24 +109,10 @@ const LandingPage = () => {
               <div className="full-bar"></div> 
               <div className="levelup-mushrooms"><img src={mushroomGroup}></img></div>
               </div>
-              <div className="landing-buttons">
-               <div onClick={loginButton} className="button-div">
-                <div className="button-img">
-                <img src={login}></img>
-                </div>
-                <div className="button-text">
-                <p>Log in</p>
-                </div>
+              <div className="join-buttons">
+                <div className="dt-signup"><p>Sign up</p></div>
+                <div className="dt-signin"><p>Sign in</p></div>
                </div>
-               <div onClick={signupButton} className="button-div">
-                <div className="button-img">
-                <img src={signup}></img>
-                </div>
-                <div className="button-text">
-                <p>Sign up</p>
-                </div>
-               </div>
-              </div>
              </div>
             <div className="footer"><p>Green Capz 2023</p></div>
         </div>
