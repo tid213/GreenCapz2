@@ -1091,6 +1091,9 @@ span a {
 }
 
 /* Tech Specs Styles */
+.tech-spec-button{
+  display: none;
+}
 .tech-specs-intro{
   background-color: #182c25;
   color: white;
@@ -1206,8 +1209,8 @@ span a {
     justify-content: space-between;
   }
   .landing-welcome{
-    font-size: 3rem;
-    margin-left: 2rem;
+    font-size: 2rem;
+    margin-left: 1rem;
   }
   .landing-image{
     height: 40vh;
@@ -1226,16 +1229,27 @@ span a {
     font-size: 8rem;
   }
   .landing-brand p{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .spacer{
     margin-top: 2rem;
     max-width: 20vw;
   }
   .landing-intro{
-    padding: 4rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    background-color: rgb(219, 240, 219);
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    border-left: 3px solid #121212;
+    border-right: 3px solid #121212;
   }
-  .landing-intro p, .product-info-title p{
+  .landing-intro p{
+    line-height: 3;
+    font-size: 1.5rem;
+  }
+  
+  .product-info-title p{
     font-size: 1.5rem;
   }
   .landing-intro b{
@@ -1244,10 +1258,9 @@ span a {
   .info-div-header{
     display: flex;
     background-color: #182c25;
-    max-width: 60vw;
+    max-width: 100vw;
     flex-direction: row;
     height: 400px;
-    float: left;
   }
   .info-div-header h4{
     text-align: center;
@@ -1255,6 +1268,24 @@ span a {
   .product-info{
     width: auto;
     display: block;
+    padding-right: 8rem;
+    padding-left: 8rem;
+    border-left: 3px solid #121212;
+    border-right: 3px solid #121212;
+    margin-top: 0;
+    background-color: rgb(219, 240, 219);
+  }
+  .tech-spec-button{
+    display: block;
+    width: 25vw;
+    background-color: #121212;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid lightgreen;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
   }
   .product-info-title{
     display: flex;
@@ -1267,7 +1298,7 @@ span a {
     width: 80%;
   }
   .product-info-title h4{
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .product-info-container{
     background-color: white;
@@ -1281,13 +1312,11 @@ span a {
     display: flex;
     flex-direction: column;
     width: 30vw;
+    background-color: #182c25;
   }
   .product-info-div img{
     max-width: 20vw;
     margin-left: 3rem;
-  }
-  .product-info-li-spacer{
-    display: none;
   }
   .product-info ul{
     margin-left: auto;
@@ -1298,15 +1327,14 @@ span a {
     width: auto;
     font-size: 1.5rem;
     padding-bottom: 1rem;
-    line-height: 2;
+    line-height: 3;
     padding: 1rem;
   }
   .join-container{
-    background-color: white;
+    background-color: #182c25;
     display: flex;
     flex-direction: row;
     border: none;
-    padding-bottom: 10rem;
   }
   .join-title-div{
     width: 50%;
@@ -1345,12 +1373,18 @@ span a {
     justify-content: center;
     align-items: center;
     width: 50%;
+    border-right: 3px solid #182c25;
+    background-color: #182c25;
 
   }
   .join-text p{
     width: auto;
     line-height: 2;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    color: white;
+  }
+  .join-text b{
+    color: lightgreen;
   }
   .join-now{
     background-color: white;
@@ -1364,14 +1398,45 @@ span a {
   }
   .dt-signup{
     width: 13vw;
-    background-color: #2c4c3b;
+    background-color: #121212;
     border-radius: 10px;
     color: white;
+    border: 2px solid lightgreen;
   }
   .dt-signin{
     width: 13vw;
-    background-color: #2c4c3b;
+    background-color: #121212;
     border-radius: 10px;
     color: white;
+    border: 2px solid lightgreen;
+  }
+  .footer{
+    background-color: #121212;
+  }
+  .nav-options{
+    width: 25vw;
+  }
+  .ts-intro-img img{
+    max-height: 40vh;
+  }
+  .arduino-img img{
+    max-height: 33vh;
+  }
+  .tech-specs-arduino{
+    height: 45vh;
+  }
+  .tech-specs-intro-text, .tech-specs-arduino-text, .tech-specs-rp-text, .ts-db-text, .ts-sensor-list{
+    font-size: 1.25rem;
+  }
+  .ts-sensors-img img{
+    max-height: 40vh;
+  }
+  .form-page{
+    background-color: rgb(219, 240, 219);
+  }
+  .form-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
   }
 }

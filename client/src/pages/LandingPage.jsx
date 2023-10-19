@@ -29,7 +29,7 @@ const LandingPage = () => {
             <div className="page-header-left"><p>Green</p></div>
             <div className="page-header-right"><p>Capz</p></div>
           </div>
-            <div className="landing-welcome"><h4>Welcome to</h4></div>
+            <div className="landing-welcome"><h4>Welcome to..</h4></div>
             <div className="landing-title-div">
               <div className="landing-image">
                 <div className="spacer">
@@ -65,7 +65,8 @@ const LandingPage = () => {
              </div>
              <div className="product-info-title">
               <h4>How?</h4>
-              <p>With our technology and knowledge we can provide..</p>
+              <p>With our technology and knowledge we can provide many benefits to ensure an optimal grow</p>
+              <div className="tech-spec-button"><p>Tech Specs</p></div>
              </div>
              </div>
              <div className="product-info">
