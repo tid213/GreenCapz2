@@ -1246,7 +1246,7 @@ span a {
   }
   .landing-intro p{
     line-height: 3;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   
   .product-info-title p{
@@ -1325,7 +1325,7 @@ span a {
   }
   .product-info li{
     width: auto;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding-bottom: 1rem;
     line-height: 3;
     padding: 1rem;
@@ -1335,6 +1335,7 @@ span a {
     display: flex;
     flex-direction: row;
     border: none;
+    padding-bottom: 2rem;
   }
   .join-title-div{
     width: 50%;
@@ -1438,5 +1439,21 @@ span a {
     margin-left: auto;
     margin-right: auto;
     width: 40vw;
+  }
+  .readingsContainer{
+    max-width: 30vw;
+    margin: .5rem;
+  }
+  .tent-temp-chart{
+    max-width: 25vw;
+  }
+  .chart-toggle{
+    width: 50vw;
+  }
+  .chart-group{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
   }
 }

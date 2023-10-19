@@ -177,6 +177,7 @@ const Readings = (username) => {
           </div>
           {changeToggle()}
           <div className="toggle-show"><p>Showing data for {chartLength} days</p></div>
+          <div className="chart-group">
           <div className="readingsContainer">
             <h1>Temperature</h1>
             <div className="tent-temp-chart">
@@ -306,6 +307,7 @@ const Readings = (username) => {
             <div className="reading-chart-timestamp">
               <p>Last reading taken: {getTime()}</p>
             </div>
+          </div>
           </div>
         </div>
     )
