@@ -86,8 +86,9 @@ const LandingPage = () => {
                 </Fade>
             </div>
             </div>
-            <Fade delay={3}>
+            
             <div className="join-container">
+            <Fade delay={4}>
               <div className="join-title-div">
                <div className="join-header"><h4>Join Us Now..</h4></div>
                <div className="join-div-img">
@@ -99,17 +100,20 @@ const LandingPage = () => {
                </div>
                 <div className="join-lvl-up"><h4>and Level Up</h4></div>
               </div>
+            </Fade>
              <div className="join-text">
+              <Fade cascade delay={4}>
                 <p>Join <b>Green Capz</b> to level up your hydroponic growing experience! 
                    Elevate your hydroponic journey, maximize efficiency, and unlock 
                    your garden's full potential with <b>Green Capz</b>. Join us today and grow smarter!</p>
+              </Fade>
                <div className="desktop-buttons">
                 <div className="dt-signup"><p>Sign up</p></div>
                 <div className="dt-signin"><p>Sign in</p></div>
                </div>
              </div>
              </div>
-             </Fade>
+             
              <div className="join-now">
               <div className="join-now-img">
               <div className="full-bar"></div> 
