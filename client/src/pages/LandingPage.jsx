@@ -7,7 +7,7 @@ import mushroomChar2 from '../images/mushroom-char-3.png';
 import mushroomChar3 from '../images/mushroom-char-4.png';
 import mushroomGroup from '../images/mushroom-group.png';
 import NavBar from '../components/NavBar.jsx';
-import { motion } from "framer-motion";
+import { Fade } from "react-awesome-reveal";
 
 const LandingPage = () => {
 
@@ -52,9 +52,9 @@ const LandingPage = () => {
                     your hydroponic experience, ensuring your plants thrive in the most 
                     <b> efficient</b> and environmentally conscious way possible.</p>
             </div>
-            <div className="product-info-header"><h4>Here to help</h4></div>
+            <Fade><div className="product-info-header"><h4>Here to help</h4></div></Fade>
             <div className="product-info-container">
-            
+            <Fade delay={1}>
             <div className="info-div-header">
              <div className="product-info-div">
                 <div className="spacer">
@@ -69,7 +69,9 @@ const LandingPage = () => {
               <div className="tech-spec-button"><p>Tech Specs</p></div>
              </div>
              </div>
+             </Fade>
              <div className="product-info">
+              <Fade cascade damping={0.1}>
                 <ul>
                     <li><b>Optimize Plant Health:</b> Precise nutrient monitoring ensures that plants receive the ideal mix of nutrients, promoting robust growth, higher yields, and healthier crops.</li>
                     <div className="product-info-li-spacer"></div>
@@ -81,8 +83,10 @@ const LandingPage = () => {
                     <div className="product-info-li-spacer"></div>
                     <li><b>Increased Productivity:</b> By maintaining optimal nutrient levels, growers can achieve faster growth cycles and more abundant harvests, increasing overall productivity in hydroponic systems.</li>
                 </ul>
+                </Fade>
             </div>
             </div>
+            <Fade delay={3}>
             <div className="join-container">
               <div className="join-title-div">
                <div className="join-header"><h4>Join Us Now..</h4></div>
@@ -105,6 +109,7 @@ const LandingPage = () => {
                </div>
              </div>
              </div>
+             </Fade>
              <div className="join-now">
               <div className="join-now-img">
               <div className="full-bar"></div> 

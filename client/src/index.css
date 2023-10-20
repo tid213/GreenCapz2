@@ -511,6 +511,8 @@ span a {
   display: flex;
   width: 100vw;
   background-color: white;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   
 }
 .landing-intro p{
