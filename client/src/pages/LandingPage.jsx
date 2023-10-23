@@ -7,7 +7,7 @@ import mushroomChar2 from '../images/mushroom-char-3.png';
 import mushroomChar3 from '../images/mushroom-char-4.png';
 import mushroomGroup from '../images/mushroom-group.png';
 import NavBar from '../components/NavBar.jsx';
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide, Bounce } from "react-awesome-reveal";
 
 const LandingPage = () => {
 
@@ -29,8 +29,9 @@ const LandingPage = () => {
             <div className="page-header-left"><p>Green</p></div>
             <div className="page-header-right"><p>Capz</p></div>
           </div>
-            <div className="landing-welcome"><h4>Welcome to..</h4></div>
+            <Fade duration={2500}><div className="landing-welcome"><h4>Welcome to..</h4></div></Fade>
             <div className="landing-title-div">
+              <Bounce delay={200}>
               <div className="landing-image">
                 <div className="spacer">
                   <div className="spacer-left"></div>
@@ -38,24 +39,29 @@ const LandingPage = () => {
                 </div>
                  <img src={mushroomChar}></img>
               </div>
+              </Bounce>
               <div className="landing-brand">
-                    <h4>GREEN CAPZ</h4>
-                
-                <p>Your gateway to precision hydroponic cultivation! </p>
+                <Slide direction="left" delay={500}><h4>GREEN CAPZ</h4></Slide>
+                <Slide direction="right" delay={800}><p>Your gateway to precision hydroponic cultivation! </p></Slide>
               </div>
           </div>          
           <div className="landing-intro">
+            <Fade delay={600}>
                 <p>
                     At <b>Green Capz</b>, we specialize in monitoring sensor data for hydroponic 
                     growers, empowering you to achieve <b>optimal</b> crop yields and sustainability. 
+                  </p>
+                  <p>
                     Our technology and insights combine to revolutionize 
                     your hydroponic experience, ensuring your plants thrive in the most 
                     <b> efficient</b> and environmentally conscious way possible.</p>
+            </Fade>
             </div>
             <Fade><div className="product-info-header"><h4>Here to help</h4></div></Fade>
             <div className="product-info-container">
-            <Fade delay={1}>
+            
             <div className="info-div-header">
+              <Bounce>
              <div className="product-info-div">
                 <div className="spacer">
                 <div className="spacer-left-2"></div>
@@ -63,13 +69,14 @@ const LandingPage = () => {
                 </div>
                 <div className="landing-image"><img src={mushroomChar2}></img></div>
              </div>
+             </Bounce>
              <div className="product-info-title">
-              <h4>How?</h4>
-              <p>With our technology and knowledge we can provide many benefits to ensure an optimal grow</p>
+              <Slide direction="right"><h4>How?</h4></Slide>
+              <Slide direction="left"><p>With our technology and knowledge we can provide many benefits to ensure an optimal grow</p></Slide>
               <div className="tech-spec-button"><p>Tech Specs</p></div>
              </div>
              </div>
-             </Fade>
+             
              <div className="product-info">
               <Fade cascade damping={0.1}>
                 <ul>
@@ -88,21 +95,20 @@ const LandingPage = () => {
             </div>
             
             <div className="join-container">
-            <Fade delay={4}>
               <div className="join-title-div">
-               <div className="join-header"><h4>Join Us Now..</h4></div>
+               <Slide><div className="join-header"><h4>Join Us Now..</h4></div></Slide>
                <div className="join-div-img">
                 <div className="spacer">
                 <div className="spacer-left-3"></div>
                 <div className="spacer-right-3"></div>
                 </div>
-                <div className="join-img"><img src={mushroomChar3}></img></div>
+                <Bounce><div className="join-img"><img src={mushroomChar3}></img></div></Bounce>
                </div>
-                <div className="join-lvl-up"><h4>and Level Up</h4></div>
+                <Slide direction="left"><div className="join-lvl-up"><h4>and Level Up</h4></div></Slide>
               </div>
-            </Fade>
+            
              <div className="join-text">
-              <Fade cascade delay={4}>
+              <Fade delay={400}>
                 <p>Join <b>Green Capz</b> to level up your hydroponic growing experience! 
                    Elevate your hydroponic journey, maximize efficiency, and unlock 
                    your garden's full potential with <b>Green Capz</b>. Join us today and grow smarter!</p>

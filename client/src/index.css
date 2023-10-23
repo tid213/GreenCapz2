@@ -448,9 +448,9 @@ span a {
   flex-direction: column;
   align-content: center;
   height: 20vh;
-  animation: bounceInRight ease 1s;
+  /*animation: bounceInRight ease 1s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
 }
 
 .landing-image img{
@@ -464,9 +464,9 @@ span a {
   margin-left: .5rem;
   font-size: 1.5rem;
   font-family: 'Dosis', sans-serif;
-  animation: fadeInAnimation ease 1s;
+  /*animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
 }
 .landing-intro b{
   color: #306844;
@@ -477,14 +477,14 @@ span a {
 }
 .landing-brand{
   text-align: center;
-  animation: slideInFromLeft ease 1.5s;
+  /*animation: slideInFromLeft ease 1.5s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
 }
 .landing-brand p{
-  animation: slideInFromLeft ease 1s;
+  /*animation: slideInFromLeft ease 1s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
   color:white;
   font-weight: 500;
 }
@@ -509,10 +509,12 @@ span a {
 }
 .landing-intro{
   display: flex;
+  flex-direction: column;
   width: 100vw;
   background-color: white;
   padding-bottom: 2rem;
   padding-top: 2rem;
+  margin-bottom: 2rem;
   
 }
 .landing-intro p{
@@ -521,15 +523,15 @@ span a {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   color: #000;
   line-height: 1.6;
   margin-top: auto;
   margin-bottom: auto;
-  animation: fadeInAnimation ease 2s;
+  /*animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
   
 }
 .home_page span {
@@ -664,10 +666,10 @@ span a {
   width: 100vw;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
-  padding: 1.5rem;
+  padding: 3rem;
   color: #000;
   background-color: white;
   line-height: 1.6;
@@ -1340,7 +1342,7 @@ span a {
     padding-bottom: 2rem;
   }
   .join-title-div{
-    width: 50%;
+    width: 50vw;
     background-color: #182c25;
     height: fit-content;
     display: flex;
