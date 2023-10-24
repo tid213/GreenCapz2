@@ -117,6 +117,12 @@ const LandingPage = () => {
                 <div className="dt-signup"><p>Sign up</p></div>
                 <div className="dt-signin"><p>Sign in</p></div>
                </div>
+               <Bounce delay={800}>
+               <div className="mobile-buttons">
+                  <div className="mobile-button"><p>Sign up</p></div>
+                  <div className="mobile-button"><p>Sign in</p></div>
+               </div>
+               </Bounce>
              </div>
              </div>
              

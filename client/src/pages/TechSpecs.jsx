@@ -5,6 +5,7 @@ import arduino from '../images/arduino.png';
 import raspberryPi from '../images/raspberry-pi.png';
 import mongoDB from '../images/mongodb.png';
 import UserNavBar from '../components/UserNavBar.jsx';
+import { Bounce } from 'react-awesome-reveal';
 
 const TechSpecs = () => {
 
@@ -18,7 +19,7 @@ const TechSpecs = () => {
         <div className="tech-specs-divs">
             <div className="tech-specs-intro">
                 <div className='ts-intro-title'><h4>Tech Specs</h4></div>
-                <div className='ts-intro-img'><img src={mushroomChar5}></img></div>
+                <Bounce><div className='ts-intro-img'><img src={mushroomChar5}></img></div></Bounce>
                 <div className='tech-specs-intro-text'>
                     <p>Green Capz is a powerful web application revolutionizing 
                         hydroponic cultivation. Powered by cutting-edge technology, 
@@ -81,7 +82,7 @@ const TechSpecs = () => {
             </div>
             <div className="tech-specs-sensors">
                 <div className='ts-sensors-title'><h4>Sensor Types</h4></div>
-                <div className='ts-sensors-img'><img src={mushroomChar6}></img></div>
+                <Bounce><div className='ts-sensors-img'><img src={mushroomChar6}></img></div></Bounce>
                 <div className='ts-sensor-list'>
                     <ul>
                         <li><b>pH Sensor:</b> pH level is critical for nutrient absorption in plants. pH sensors measure the acidity or alkalinity of the nutrient solution.</li>

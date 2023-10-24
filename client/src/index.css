@@ -643,6 +643,7 @@ span a {
   background-color: #121212;
   padding-bottom: 2rem;
 }
+
 .product-info-title h4{
   text-align: center;
   height: auto;
@@ -669,6 +670,7 @@ span a {
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
+  flex-direction: column;
   padding: 3rem;
   color: #000;
   background-color: white;
@@ -686,6 +688,32 @@ span a {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
     color: lightgreen;
+}
+.mobile-buttons{
+  display: flex;
+  width: 80vw;
+  height: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.mobile-button{
+  margin-top: 1.5rem;
+  background-color: #306844;
+  width: 38vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.mobile-button p{
+  width: fit-content;
 }
 .product-info{
   font-family: 'Dosis', sans-serif;
@@ -726,6 +754,7 @@ span a {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 
 .button-div{
