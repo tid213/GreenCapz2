@@ -17,7 +17,7 @@ const LandingPage = () => {
         e.preventDefault();
         navigate('/signup')
     }
-    const loginButton = (e) => {
+    const signinButton = (e) => {
         e.preventDefault();
         navigate('/login')
     }
@@ -96,7 +96,7 @@ const LandingPage = () => {
             
             <div className="join-container">
               <div className="join-title-div">
-               <Slide><div className="join-header"><h4>Join Us Now..</h4></div></Slide>
+               <Slide delay={400}><div className="join-header"><h4>Join Us Now..</h4></div></Slide>
                <div className="join-div-img">
                 <div className="spacer">
                 <div className="spacer-left-3"></div>
@@ -104,7 +104,7 @@ const LandingPage = () => {
                 </div>
                 <Bounce><div className="join-img"><img src={mushroomChar3}></img></div></Bounce>
                </div>
-                <Slide direction="left"><div className="join-lvl-up"><h4>and Level Up</h4></div></Slide>
+                <Slide direction="left" delay={800}><div className="join-lvl-up"><h4>and Level Up</h4></div></Slide>
               </div>
             
              <div className="join-text">
@@ -119,8 +119,8 @@ const LandingPage = () => {
                </div>
                <Bounce delay={800}>
                <div className="mobile-buttons">
-                  <div className="mobile-button"><p>Sign up</p></div>
-                  <div className="mobile-button"><p>Sign in</p></div>
+                  <div className="mobile-button" onClick={signupButton}><p>Sign up</p></div>
+                  <div className="mobile-button" onClick={signinButton}><p>Sign in</p></div>
                </div>
                </Bounce>
              </div>
