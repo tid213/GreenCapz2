@@ -1231,6 +1231,7 @@ span a {
   .landing-intro p{
     line-height: 3;
     font-size: 1.25rem;
+    width: auto;
   }
   
   .product-info-title p{

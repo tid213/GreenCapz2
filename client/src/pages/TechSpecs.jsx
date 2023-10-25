@@ -4,7 +4,6 @@ import mushroomChar6 from '../images/mushroom-char-6.png';
 import arduino from '../images/arduino.png';
 import raspberryPi from '../images/raspberry-pi.png';
 import mongoDB from '../images/mongodb.png';
-import UserNavBar from '../components/UserNavBar.jsx';
 import { Bounce } from 'react-awesome-reveal';
 
 const TechSpecs = () => {
@@ -78,7 +77,6 @@ const TechSpecs = () => {
                          with different fields, making it easy to adapt to changing data 
                          formats without disrupting the system.</p>
                 </div>
-                
             </div>
             <div className="tech-specs-sensors">
                 <div className='ts-sensors-title'><h4>Sensor Types</h4></div>

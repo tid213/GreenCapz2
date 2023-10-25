@@ -18,6 +18,10 @@ const LandingPage = () => {
         e.preventDefault();
         navigate('/login')
     }
+    const techSpecsButton = (e) => {
+      e.preventDefault();
+      navigate('/techspecs')
+    }
 
     return(
         <div className="landing-page">
@@ -57,23 +61,22 @@ const LandingPage = () => {
             <Fade><div className="product-info-header"><h4>Here to help</h4></div></Fade>
             <div className="product-info-container">
             
-            <div className="info-div-header">
+             <div className="info-div-header">
               <Bounce>
-             <div className="product-info-div">
+              <div className="product-info-div">
                 <div className="spacer">
                 <div className="spacer-left-2"></div>
                 <div className="spacer-right-2"></div>
                 </div>
                 <div className="landing-image"><img src={mushroomChar2}></img></div>
-             </div>
+              </div>
              </Bounce>
              <div className="product-info-title">
               <Slide direction="right"><h4>How?</h4></Slide>
               <Slide direction="left"><p>With our technology and knowledge we can provide many benefits to ensure an optimal grow</p></Slide>
-              <div className="tech-spec-button"><p>Tech Specs</p></div>
+              <div className="tech-spec-button" onClick={techSpecsButton}><p>Tech Specs</p></div>
              </div>
              </div>
-             
              <div className="product-info">
               <Fade cascade damping={0.1}>
                 <ul>
@@ -89,7 +92,7 @@ const LandingPage = () => {
                 </ul>
                 </Fade>
             </div>
-            </div>
+          </div>
             
             <div className="join-container">
               <div className="join-title-div">

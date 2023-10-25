@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
-import homeImg from '../images/home.svg';
 import NavBar from '../components/NavBar.jsx';
 
 const Signup = () => {
@@ -22,15 +20,6 @@ const Signup = () => {
     });
   };
 
-  const handleError = (err) =>
-    toast.error(err, {
-      position: "bottom-left",
-    });
-  const handleSuccess = (msg) =>
-    toast.success(msg, {
-      position: "bottom-right",
-    });
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -43,7 +32,6 @@ const Signup = () => {
       );
       const { success, message } = data;
       if (success) {
-        handleSuccess(message);
         setTimeout(() => {
           navigate("/");
         }, 1000);
@@ -60,11 +48,6 @@ const Signup = () => {
       username: "",
     });
   };
-
-  const homeButton = (e) => {
-    e.preventDefault();
-    navigate('/')
-  }
 
   return (
     <div className="form-page">
