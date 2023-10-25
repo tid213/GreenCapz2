@@ -1,7 +1,4 @@
-import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import login from '../images/user.svg';
-import signup from '../images/user-plus.svg';
 import mushroomChar from '../images/mushroom-char-1.png';
 import mushroomChar2 from '../images/mushroom-char-3.png';
 import mushroomChar3 from '../images/mushroom-char-4.png';
@@ -30,21 +27,21 @@ const LandingPage = () => {
             <div className="page-header-right"><p>Capz</p></div>
           </div>
             <Fade duration={2500}><div className="landing-welcome"><h4>Welcome to..</h4></div></Fade>
-            <div className="landing-title-div">
+             <div className="landing-title-div">
               <Bounce delay={200}>
               <div className="landing-image">
                 <div className="spacer">
                   <div className="spacer-left"></div>
                   <div className="spacer-right"></div>
                 </div>
-                 <img src={mushroomChar}></img>
+                <img src={mushroomChar}></img>
               </div>
               </Bounce>
               <div className="landing-brand">
-                <Slide direction="left" delay={500}><h4>GREEN CAPZ</h4></Slide>
-                <Slide direction="right" delay={800}><p>Your gateway to precision hydroponic cultivation! </p></Slide>
+                <Slide direction="left" ><h4>GREEN CAPZ</h4></Slide>
+                <Slide direction="right" ><p>Your gateway to precision hydroponic cultivation! </p></Slide>
               </div>
-          </div>          
+             </div>          
           <div className="landing-intro">
             <Fade delay={600}>
                 <p>
