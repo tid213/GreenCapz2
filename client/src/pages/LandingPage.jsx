@@ -52,6 +52,7 @@ const LandingPage = () => {
                     At <b>Green Capz</b>, we specialize in monitoring sensor data for hydroponic 
                     growers, empowering you to achieve <b>optimal</b> crop yields and sustainability. 
                   </p>
+                  <br></br>
                   <p>
                     Our technology and insights combine to revolutionize 
                     your hydroponic experience, ensuring your plants thrive in the most 

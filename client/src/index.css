@@ -431,7 +431,6 @@ span a {
 .landing-title-div{
   font-family: 'Dosis', sans-serif;
   width: 100vw;
-  height: 300px;
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
@@ -440,7 +439,7 @@ span a {
   display: flex;
   flex-direction: column;
   align-content: center;
-  height: 20vh;
+
   /*animation: bounceInRight ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;*/
@@ -1190,34 +1189,34 @@ span a {
     background-color: #121212;
   }
   .page-header{
-    width: 100vw;
     left: 0;
-    position: absolute;
+    position: fixed;
+    border: 0;
   }
   .landing-page{
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 60%;
   }
   .landing-title-div{
-    flex-direction: row-reverse;
-    height: 400px;
-    justify-content: space-between;
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 0;
   }
   .landing-welcome{
     font-size: 1.5rem;
     margin-left: 2rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
-  .landing-image{
-    height: 40vh;
-    
-  }
+  
   .landing-image img{
-    max-height: 40vh;
+    max-height: 25vh;
   }
   .landing-brand{
     margin-top: auto;
@@ -1226,10 +1225,10 @@ span a {
     margin-right: auto;
   }
   .landing-brand h4{
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .landing-brand p{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .spacer{
     margin-top: 2rem;
@@ -1237,31 +1236,33 @@ span a {
   }
   .landing-intro{
     width: 100%;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     background-color: rgb(219, 240, 219);
     padding-bottom: 4rem;
     padding-top: 4rem;
     margin-bottom: 0;
   }
   .landing-intro p{
-    line-height: 3;
-    font-size: 1.25rem;
-    width: auto;
+    line-height: 2;
+    font-size: 1rem;
+    width: 100%;
   }
   
   .product-info-title p{
-    font-size: 1.5rem;
+    font-size: 1.15rem;
   }
   .landing-intro b{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .info-div-header{
-    display: flex;
     background-color: #182c25;
-    max-width: 100vw;
+    max-width: 100%;
     flex-direction: row;
-    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .info-div-header h4{
     text-align: center;
@@ -1269,8 +1270,8 @@ span a {
   
   .product-info{
     display: block;
-    padding-right: 8rem;
-    padding-left: 8rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
     margin-top: 0;
     background-color: rgb(219, 240, 219);
     width: 100%;
@@ -1286,6 +1287,7 @@ span a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .product-info-title{
     display: flex;
@@ -1301,22 +1303,24 @@ span a {
     font-size: 4rem;
   }
   .product-info-container{
-    background-color: white;
     width: 100%;
+    overflow: hidden;
   }
   .product-info-header{
-    font-size: 3rem;
-    display: none;
+    font-size: 2rem;
   }
   .product-info-div{
     display: flex;
     flex-direction: column;
-    width: 30vw;
-    background-color: #182c25;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
   }
   .product-info-div img{
     max-width: 20vw;
-    margin-left: 3rem;
   }
   .product-info ul{
     margin-left: auto;
@@ -1337,6 +1341,7 @@ span a {
     border: none;
     padding-bottom: 2rem;
     width: 100%;
+    overflow: hidden;
   }
   .join-title-div{
     width: 50vw;
@@ -1354,7 +1359,7 @@ span a {
     height: fit-content;
   }
   .join-img img{
-    max-width: 20vw;
+    max-width: 15vw;
     max-height: fit-content;
   }
   .join-header{
@@ -1377,6 +1382,7 @@ span a {
     width: 50%;
     border-right: 3px solid #182c25;
     background-color: #182c25;
+    padding: 1rem;
 
   }
   .join-text p{
@@ -1394,19 +1400,18 @@ span a {
   }
   .desktop-buttons{
     display: flex;
-    width: 30vw;
+    width: 100%;
     justify-content: space-between;
     margin-top: 1rem;
   }
   .dt-signup{
-    width: 13vw;
     background-color: #121212;
     border-radius: 10px;
     color: white;
     border: 2px solid lightgreen;
+    margin-right: 1rem;
   }
   .dt-signin{
-    width: 13vw;
     background-color: #121212;
     border-radius: 10px;
     color: white;
@@ -1459,5 +1464,12 @@ span a {
   }
   .mobile-buttons{
     display: none;
+  }
+  .navbar img{
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1000;
+    width: 2rem;
   }
 }
