@@ -1199,6 +1199,7 @@ span a {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+    box-shadow: 8px 0 10px -4px #306844, -8px 0 10px -4px #306844;
   }
   .landing-title-div{
     display: flex;
@@ -1419,6 +1420,8 @@ span a {
   }
   .footer{
     background-color: #121212;
+    width: 100%;
+    display: none;
   }
   .nav-options{
     width: 25vw;
