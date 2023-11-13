@@ -59,7 +59,7 @@ const LandingPage = () => {
                     <b> efficient</b> and environmentally conscious way possible.</p>
             </Fade>
             </div>
-            <Fade><div className="product-info-header"><h4>Here to help</h4></div></Fade>
+            <Fade><div className="product-info-header"><h4>We're here to help..</h4></div></Fade>
             <div className="product-info-container">
             
              <div className="info-div-header">
