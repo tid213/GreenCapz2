@@ -1392,6 +1392,7 @@ span a {
     font-size: 3rem;
     margin-left: auto;
     color: lightgreen;
+    animation: wiggle 2s infinite;
   }
   .join-text{
     display: flex;
