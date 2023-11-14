@@ -115,8 +115,8 @@ const LandingPage = () => {
                    your garden's full potential with <b>Green Capz</b>. Join us today and grow smarter!</p>
               </Fade>
                <div className="desktop-buttons">
-                <div className="dt-signup"><p>Sign up</p></div>
-                <div className="dt-signin"><p>Sign in</p></div>
+                <div className="dt-signup" onClick={signupButton}><p>Sign up</p></div>
+                <div className="dt-signin" onClick={signinButton}><p>Sign in</p></div>
                </div>
                <Bounce delay={800}>
                <div className="mobile-buttons">

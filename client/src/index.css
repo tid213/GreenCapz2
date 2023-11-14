@@ -1445,11 +1445,27 @@ span a {
   .nav-options{
     width: 25vw;
   }
+  .tech-specs-divs{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tech-specs-intro{
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .ts-intro-title{
+    margin-right: 4rem;
+    margin-top: 4rem;
+  }
   .ts-intro-img img{
     max-height: 40vh;
   }
   .arduino-img img{
     max-height: 33vh;
+  }
+  .ts-db-img img{
+    max-width: 40vw;
   }
   .tech-specs-arduino{
     height: 45vh;
@@ -1459,9 +1475,6 @@ span a {
   }
   .ts-sensors-img img{
     max-height: 40vh;
-  }
-  .form-page{
-    background-color: rgb(219, 240, 219);
   }
   .form-container{
     margin-left: auto;
